@@ -1,8 +1,8 @@
 
 # Projeto Integrador 2 2019_2
 
-Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina - Câmpus Florianópolis
-Departamento Acadêmico de Eletrônica
+Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina - Câmpus Florianópolis 
+Departamento Acadêmico de Eletrônica 
 Curso de Engenharia Eletrônica
 
 Alunos:
