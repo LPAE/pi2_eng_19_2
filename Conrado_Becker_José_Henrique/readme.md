@@ -7,8 +7,8 @@ Curso de graduação em engenharia eletrônica
 
 Alunos:
 
-*Conrado Becker Gressler
-*José Henrique Schmitt Fidelis
+* Conrado Becker Gressler
+* José Henrique Schmitt Fidelis
 
 ## Sumário
 
