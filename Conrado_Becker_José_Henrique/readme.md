@@ -1,11 +1,16 @@
 
-#Projeto Integrador II 2019_2
+# Projeto Integrador II 2019_2
 
 Instituto federal de educação, ciência e tecnologia de Santa Catarina - Câmpus Florianópolis
 Departamento Acadêmico de Eletrônica
 Curso de graduação em engenharia eletrônica
 
-##Sumário
+Alunos:
+
+*Conrado Becker Gressler
+*José Henrique Schmitt Fidelis
+
+## Sumário
 
 1. Introdução
 2. Concepção
@@ -14,9 +19,9 @@ Curso de graduação em engenharia eletrônica
 5. Operacionalização
 6. Referências
 
-##Introdução
+## Introdução
 
-###Indústria 4.0
+### Indústria 4.0
 
 Antes da globalização e da evolução dos meios de comunicação, indústrias, países e pessoas utilizavam de métodos analógicos e de certa forma, rudimentares, quando comparados com a internet. Devido ao desenvolvimento na área de divulgação de informações que surgiu com a vinda desta e com sua presença se tornando cada vez mais usual e necessária, novas formas de utiliza-la assim como outros meios de comunicação similares entre o usuário e as máquinas acabaram por tomar conta da rotina de milhares de pessoas.
 Essas ferramentas começaram a ser implementadas cada vez mais nas empresas e meios de produção de larga escala com o intuito de, cada vez mais, facilitar e acelerar os processos que ja eram automatizados como, por exemplo, sincronizar as confecções de produtos entre fábricas de maneira remota.
