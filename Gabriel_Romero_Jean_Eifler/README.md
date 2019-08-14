@@ -5,15 +5,21 @@ Câmpus Florianópolis Departamento Acadêmico de Eletrônica
 
 Curso de Engenharia Eletrônica
 
-    Alunos:
+Alunos:
 
-    • Gabriel Romero Siqueira dos Santos
-    • Jean Eifler
+• Gabriel Romero Siqueira dos Santos
 
+• Jean Eifler
 
 ## Sumário
+1. Introdução
+2. Concepção
+3. Design
+4. Implemetação
+5. Operacionalização
+6. Referências
 
-## Introdução
+## 1. Introdução
 ### Indústria 4.0
 
     A indústria 4.0 surge para buscar melhorar a eficiência de produção, podendo se dar de várias formas. Os processos buscam ser autônomos, havendo tecnologias de monitoramento e com tomadas de decisão em tempo real, diminuindo assim a dependência de seres humanos em território fabril, que podem consultar o funcionamento a distância.
@@ -25,3 +31,9 @@ Curso de Engenharia Eletrônica
     A eficiência é tamanha que não é mais incomum indústrias trabalharem no escuro, simplesmente por não haver necessidade de material humano dentro dela, isso gera novas tendências nos modelos de negócios onde só haverá espaço de trabalho para quem for destaque.
 
     A indústria inteligente surgiu de forma veloz, acompanhando o crescimento da capacidade humana de produzir informação, é um modelo que tende a passar despercebido tal qual um sistema embarcado e encaminha para ser o grande modelo de produção dos próximos anos.
+
+## 2. Concepção
+## 3. Design
+## 4. Implemetação
+## 5. Operacionalização
+## 6. Referências
