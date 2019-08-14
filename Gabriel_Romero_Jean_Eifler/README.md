@@ -1,4 +1,20 @@
-# Indústria 4.0
+# Projeto Integrador 2 2019_2
+IFSC | Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina
+
+Câmpus Florianópolis Departamento Acadêmico de Eletrônica
+
+Curso de Engenharia Eletrônica
+
+    Alunos:
+
+    • Gabriel Romero Siqueira dos Santos
+    • Jean Eifler
+
+
+## Sumário
+
+## Introdução
+### Indústria 4.0
 
     A indústria 4.0 surge para buscar melhorar a eficiência de produção, podendo se dar de várias formas. Os processos buscam ser autônomos, havendo tecnologias de monitoramento e com tomadas de decisão em tempo real, diminuindo assim a dependência de seres humanos em território fabril, que podem consultar o funcionamento a distância.
 
