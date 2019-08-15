@@ -13,11 +13,12 @@ Alunos:
 
 ## Sumário
 1. Introdução
-2. Concepção
-3. Design
-4. Implemetação
-5. Operacionalização
-6. Referências
+2. Proposta
+3. Concepção
+4. Design
+5. Implemetação
+6. Operação
+7. Referências
 
 ## 1. Introdução
 ### Indústria 4.0
@@ -32,8 +33,42 @@ Alunos:
 
     A indústria inteligente surgiu de forma veloz, acompanhando o crescimento da capacidade humana de produzir informação, é um modelo que tende a passar despercebido tal qual um sistema embarcado e encaminha para ser o grande modelo de produção dos próximos anos.
 
-## 2. Concepção
-## 3. Design
-## 4. Implemetação
-## 5. Operacionalização
-## 6. Referências
+## 2. Proposta 
+O projeto será realizado através do método CDIO (Concepção -> Design -> Implementar -> Operar).
+#### Concepção:
+Explanar as necessidades do cliente, técnologias disponíveis, estratégias e normas para planejar o projeto.
+#### Design:
+Desenvolver as ideias no papel para visualizar o que será executado.
+#### Implementar:
+Dar vida ao design transformando-o em produto e desenvolvimentos de testes.
+#### Operar:
+Entrega do produto testado e validado, caso necessário manutenções e recolhimento do sistema.
+
+Através do CDIO é possível identificar detalhadamente as habilidades que um engenheiro deve ter.
+
+## 3. Concepção
+O desafio proposto é implantar meios de destrancar uma fechadura eletrônica não energizada em uma pequena porta de madeira usada para teste.
+
+A primeira observação é a construção de uma fonte para que a fechadura seja alimentada e funcione 
+
+As soluções encontradas foram:
+- Teclado matricial;
+- Técnologia RFID (Identificação por Radiofrequência);
+- App de celular.
+
+Recursos Visuais:
+- LEDs que informem se a fechadura está trancada ou destrancada
+- Display:
+    - mostrar ocultamente passo a passo da senha digitada;
+    - Informar:
+        - Senha *CORRETA* ou *INCORRETA*;
+        - Fechadura *ABERTA* ou *FECHADA*.
+
+Para medidas de segurança do cliente é implementado um alarme.
+
+O arduíno comandará todos os processos e será responsável de enviar e receber informações da fechadura.
+
+## 4. Design
+## 5. Implemetação
+## 6. Operação
+## 7. Referências
