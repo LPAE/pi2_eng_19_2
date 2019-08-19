@@ -29,9 +29,9 @@ Este projeto visa aplicar os conhecimentos adquiridos durante o curso e introduz
 Como componente de segurança as fechaduras têm sua base nas ideias de controle e confiabilidade. Tendo isso em vista podemos concluir que as fechaduras eletrônicas superam as convencionais, pois apresentam vantagens nos dois focos. Para uma análise mais específica, vejamos primeiro a questão do controle; uma fechadura eletrônica pode ser acionada por sensores devidamente integrados, por comandos elétricos e, é claro, por uma chave convencional. Assim podemos evitar restrições no que diz respeito ao tempo, distância e pessoal envolvido; o que nos leva à confiabilidade.
 
 Sistemas eletrônicos são multifuncionais, isso depende apenas da quantidade de dispositivos integrados em dito sistema, como visto nos conceitos de indústria 4.0. Essa versatilidade agrega novos níveis de confiança pois possibilita respostas superiores em relação à quebra da segurança, alguns exemplos são: 
-*Monitoramento do local (no caso da fechadura o monitoramento visual é uma boa escolha)
-*Maior resistência por menos espaço, isso é, um mecanismo acionado por eletricidade tem mais poder por espaço que um dependente de energia mecânica 
-*Medidas ofensivas contra um possível invasor, comunicando a brecha com um simples alarme e/ou digitalmente para uma rede de pessoas. 
+* Monitoramento do local (no caso da fechadura o monitoramento visual é uma boa escolha)
+* Maior resistência por menos espaço, isso é, um mecanismo acionado por eletricidade tem mais poder por espaço que um dependente de energia mecânica 
+* Medidas ofensivas contra um possível invasor, comunicando a brecha com um simples alarme e/ou digitalmente para uma rede de pessoas. 
 
 Além desses fatores, a complexidade da estrutura age contra a probabilidade de falhas. 
 
