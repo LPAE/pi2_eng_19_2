@@ -33,7 +33,7 @@ Sistemas eletrônicos são multifuncionais, isso depende apenas da quantidade de
 * Maior resistência por menos espaço, isso é, um mecanismo acionado por eletricidade tem mais poder por espaço que um dependente de energia mecânica 
 * Medidas ofensivas contra um possível invasor, comunicando a brecha com um simples alarme e/ou digitalmente para uma rede de pessoas. 
 
-Além desses fatores, a complexidade da estrutura age contra a probabilidade de falhas. 
+Além desses fatores, a complexidade da estrutura age contra a probabilidade de falhas.
 
 As vantagens acima caracterizam as tecnologias que serão usadas nesse projeto, no que diz respeito à elas, teremos o seguinte conjunto como alvo 
 
