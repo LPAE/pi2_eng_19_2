@@ -9,7 +9,7 @@ Alunos:
 * Victor Lompa Schwider
 * Gabriel Ayres Rodrigues
 
-## Sumário
+# Sumário
 
 1. Introdução
 2. Concepção
@@ -38,7 +38,7 @@ As vantagens acima caracterizam as tecnologias que serão usadas nesse projeto, 
 Fechadura eletrônica
 Dispositivos para o comando da fechadura
 Ferramentas de monitoramento
-Computador para o controle da operação
+Computador para o controle das operações
 Interface entre usuário e controle
 ```
 Em parceria com a unidade curricular de Eletrônica 1 serão desenvolvidos circuitos eletrônicos que fazem parte dos grupos citados acima, nisso está inclusa uma fonte de alimentação para o projeto. A seguir são especificadas as diferentes partes aqui comentadas, levando em conta a disponibilidade dos equipamentos no inventário do câmpus.
