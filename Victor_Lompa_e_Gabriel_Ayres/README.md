@@ -41,4 +41,4 @@ Ferramentas de monitoramento
 Computador para o controle da operação
 Interface entre usuário e controle
 ```
-Serão desenvolvidos, em parceria com a unidade curricular de Eletrônica 1, circuitos eletrônicos que fazem parte dos grupos citados acima. Nisso está inclusa também uma fonte de alimentação para o projeto. A seguir são especificadas as diferentes partes aqui comentadas, levando em conta a disponibilidade dos equipamentos no inventário do câmpus.
+Em parceria com a unidade curricular de Eletrônica 1 serão desenvolvidos circuitos eletrônicos que fazem parte dos grupos citados acima, nisso está inclusa uma fonte de alimentação para o projeto. A seguir são especificadas as diferentes partes aqui comentadas, levando em conta a disponibilidade dos equipamentos no inventário do câmpus.
