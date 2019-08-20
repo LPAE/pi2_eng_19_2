@@ -32,6 +32,18 @@ Assim, a indústria 4.0 busca reformular a maneira como são feitos os processos
 
 # **Concepção**
 
-Controle e gestão de uma fechadura elétrica, 
-a informação do estado da trava para o usuário é feita com o uso de led, display gráfico e buzzer.
+Na unidade curricular de projeto integrador II, recebemos como desafio a construção sistema de controle capaz de abrir uma fechadura elétrica, utilizando diversas tecnologias para facilitar o acesso e a comunicação com o usuário. As tecnologias propostas para o destravamento da porta foram sensor RFID e teclado numérico e para a comunicação com o usuário display gráfico, buzzer e interface por computador e celular.
+
+Para o nosso projeto utilizaremos o Arduino para o controle dessas tecnologias, utilizaremos o sensor RFID para acesso a porta por meio de cartões adequados para tal. Para selecionar os cartões que terão acesso ao ambiente ou deixarão de ter, o usuário possuirá um cartão-mestre para realizar esse controle, além de opções para troca de cartão-mestre em caso de perda, por exemplo.Para facilitar a passagem, na parte interna do ambiente a porta será aberta apenas com um botão, pois a segurança necessita ser feita apenas na entrada. 
+
+A abertura via teclado será feita por meio de uma senha configurada pelo usuário, que poderá ser alterada digitando um conjunto de caracteres padrão seguidos da senha atual e a nova à ser programada.
+
+A trava terá três principais estados e a comunicação com o usuário por meio de led, buzzer e display lcd informará o estado que essa se encontra. Quando aberta,ocorrerá um breve aviso sonoro, o led fica verde e o display apresentará a palavra “aberto”. Enquanto a fechadura estiver fechada o led apresenta um vermelho intermitente e o display caracteriza esse estado solicitando uma senha.O led com vermelho contínuo seguido de um breve aviso sonoro anuncia o erro de senha digitada no teclado.
+
+A interface via computador ou smartphone será criada com o intuito de manter o usuário atualizado de todas as ações que estão ocorrendo em sua porta, quem entrou no ambiente, novos cartões ou senhas cadastradas, disparos do alarme para acesso negado, porta aberta por muito tempo, entre outros.
+
+Também será desenvolvido um sistema de segurança para o caso de senha ou crachá incorreto consecutivamente, bloqueando o acesso até que sejam inseridos uma senha de segurança e o cartão-mestre seja detectado pelo sensor.
+
+Os leds e o display também serão utilizados no momento de configuração de senhas ou cartões, indicando o período de mudança com alternação de cores no led e a palavra “configuração” no display e a confirmação das alterações com a cor verde no LED e “alterações confirmadas” no display.
+
 
