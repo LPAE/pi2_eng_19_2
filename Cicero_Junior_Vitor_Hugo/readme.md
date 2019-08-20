@@ -40,6 +40,6 @@ Com todos os benefícios que ela proporciona, pode-se esperar que a indústria 4
 
 Este projeto visa fazer o acionamento, controle e gestão de uma fechadura elétrica de forma flexível e inteligente.
 
-O acionamento será realizado de quatro maneiras diferentes, sendo elas, por wi-fi, bluetooth, teclado matricial e identificação por radiofrequência. Essa variedade concede maior liberdade para os usuários manipularem a fechadura da maneira que melhor convir, aumentando sua eficiencia. 
+O acionamento será realizado de quatro maneiras diferentes, sendo elas, por wi-fi, bluetooth, teclado matricial e identificação por radiofrequência. Essa variedade concede maior liberdade para os usuários manipularem a fechadura da maneira que melhor convir, aumentando sua eficiência. 
 
 As medidas de controle e gestão serão constituídas por sinalização com leds e buzzer,  um sensor de porta aberta e um display gráfico FTP. A sinalização será importante para garantir o funcionamento da fechadura, indicando quando ela estiver trancada ou destrancada. O sensor permitirá um controle sobre o tempo que ela é mantida destrancada, evitando que a porta fique aberta por acidente. Por último, o display permitirá a comunicação entre o usuário e a fechadura, indicando informações importantes e permitindo modificações nos parâmetros pré-programados.
