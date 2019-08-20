@@ -35,5 +35,8 @@ Sistemas eletrônicos são multifuncionais, isso depende apenas da quantidade de
 
 Além desses fatores, a complexidade da estrutura age contra a probabilidade de falhas.
 
-As vantagens acima caracterizam as tecnologias que serão usadas nesse projeto, no que diz respeito à elas, teremos o seguinte conjunto como alvo 
+As vantagens acima caracterizam as tecnologias que serão usadas nesse projeto, no que diz respeito à elas, teremos o seguinte conjunto como alvo:
+
+|      Dispositivos      |
+|   Acesso  | Controle   |       
 
