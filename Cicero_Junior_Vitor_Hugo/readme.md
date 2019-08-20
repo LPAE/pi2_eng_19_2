@@ -1,14 +1,17 @@
 
 # Projeto Integrador 2 2019_2
 
-Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina - Câmpus Florianópolis 
-Departamento Acadêmico de Eletrônica 
+Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina - Câmpus Florianópolis
+
+Departamento Acadêmico de Eletrônica
+
 Curso de Engenharia Eletrônica
 
 Alunos:
 
-* Cícero Eduardo Dick Junior
-* Vitor Hugo Cardoso
+Cícero Eduardo Dick Junior
+
+Vitor Hugo Cardoso
 
 ## Sumário
 
@@ -27,11 +30,16 @@ O conceito de indústria 4.0 surgiu em 2011 e vem se tornando cada vez mais popu
 
 Os princípios que regem a indústria 4.0, como citados a cima, são a internet das coisas e os sistemas cyber-físicos. A internet das coisas significa a comunicação entre as máquinas, permitindo que elas troquem informações entre si e tomem decisões á partir de simulações. Os sistemas cyber-físicos são responsáveis pelas simulações e pelo controle do ambiente á partir de sensores.
 
-Essa nova organização permite que os clientes tenham mais flexibilidade de escolha nos produtos que irão adquirir, utilizando de softwares para se comunicarem com as máquinas. Além disso, permite melhor controle dos processos dentro de fábrica, fazendo com que recursos sejam utilizados de forma otimizada e que um alto padrão de qualidade seja mantido.
+Essa nova organização permite que os clientes tenham mais flexibilidade de escolha nos produtos que irão adquirir. Além disso, permite melhor controle dos processos dentro de fábrica, fazendo com que recursos sejam utilizados de forma otimizada e que um alto padrão de qualidade seja mantido.
 
 O mercado de trabalho também está sendo impactado pela indústria 4.0. A busca por sistemas cyber-físicos mais sofisticados e pessoas habilitadas para administrar os novos meios de produção exigem trabalhadores mais especializados e com maior conhecimento técnico.
 
-Com todos os benefícios que ela proporciona, pode-se esperar que a indústria 4.0 seja predominante no futuro, mudando de vez o mercado e os meios de produção mundiais.
+Com todos os benefícios que ela proporciona, pode-se esperar que a indústria 4.0 seja dominante no futuro, mudando de vez o mercado e os meios de produção mundiais.
 
 ## Concepção
 
+Este projeto visa fazer o acionamento, controle e gestão de uma fechadura elétrica de forma flexível e eficiente.
+
+O acionamento será realizado de quatro maneiras diferentes, sendo elas, por wi-fi, bluetooth, teclado matricial e identificação por radiofrequência.
+
+As medidas de controle e gestão serão constituídas por sinalização com leds e buzzer,  um sensor de porta aberta e um display gráfico FTP.
