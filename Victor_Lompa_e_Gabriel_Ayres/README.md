@@ -24,23 +24,21 @@ O termo indústria 4.0 é de origem alemã e remete à teórica quarta revoluç�
 
 ## Concepção 
 
-Este projeto visa aplicar os conhecimentos adquiridos durante o curso e introduzir o processo de desenvolvimento. Junto a isso, iremos ampliar nosso leque de conhecimento ao longo da unidade curricular ao trabalhar com diversos dispositivos e tecnologias utilizadas para a montagem do produto final, isso é, uma fechadura eletrônica. 
+Esse projeto visa aplicar os conhecimentos adquiridos durante o curso e introduzir o processo de desenvolvimento. Junto a isso, iremos ampliar nosso leque de conhecimento ao longo da unidade curricular ao trabalhar com os diversos dispositivos e tecnologias utilizadas para a montagem do produto final, isso é, uma fechadura eletrônica. 
 
 Como componente de segurança as fechaduras têm sua base nas ideias de controle e confiabilidade. Tendo isso em vista podemos concluir que as fechaduras eletrônicas superam as convencionais, pois apresentam vantagens nos dois focos. Para uma análise mais específica, vejamos primeiro a questão do controle; uma fechadura eletrônica pode ser acionada por sensores devidamente integrados, por comandos elétricos e, é claro, por uma chave convencional. Assim podemos evitar restrições no que diz respeito ao tempo da operação, distância e pessoal envolvido; o que nos leva à confiabilidade.
 
-Sistemas eletrônicos são multifuncionais, isso depende apenas da quantidade de dispositivos integrados em dito sistema, como visto nos conceitos de indústria 4.0. Essa versatilidade agrega solidez ao conjunto pois possibilita respostas superiores em relação à quebra da segurança, alguns exemplos são: 
-* Monitoramento do local (no caso da fechadura o monitoramento visual é uma boa escolha)
+Sistemas eletrônicos são multifuncionais, isso depende apenas da quantidade de equipamentos integrados em dito sistema, como visto nos conceitos de indústria 4.0. Essa complexidade agrega solidez ao conjunto, tornando-o mais difícil de ser violado. Além disso, a versatilidade possibilita respostas superiores em relação à quebra da segurança. Alguns exemplos são: 
+* Monitoramento do local, feito pelo registro de atividade ou até mesmo visual
 * Maior resistência por menos espaço, isso é, um mecanismo acionado por eletricidade tem mais poder por espaço que um dependente de energia mecânica 
 * Medidas ofensivas contra um possível invasor, comunicando a brecha com um simples alarme e/ou digitalmente para uma rede de pessoas. 
-
-Além desses fatores, a complexidade da estrutura age contra a probabilidade de falhas.
 
 As vantagens acima caracterizam as tecnologias que serão usadas nesse projeto, no que diz respeito à elas, teremos o seguinte conjunto como alvo:
 ```sh
 Fechadura eletrônica
-Dispositivos para o controle da fechadura
-Interface entre usuário e controle
+Dispositivos para o comando da fechadura
 Ferramentas de monitoramento
+Computador para o controle da operação
+Interface entre usuário e controle
 ```
-teste
-  
+Serão desenvolvidos, em parceria com a unidade curricular de Eletrônica 1, circuitos eletrônicos que fazem parte dos grupos citados acima. Nisso está inclusa também uma fonte de alimentação para o projeto.
