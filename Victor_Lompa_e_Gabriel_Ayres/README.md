@@ -25,7 +25,7 @@ O termo indústria 4.0 é de origem alemã e remete à teórica quarta revoluç�
 A tecnologia da informação e os avanços na área da computação trouxeram à realidade modelos de conectividade capazes de mudar a produção em escala global. Conceitos como fábricas (ou transporte) sem envolvimento humano, que eram ficção há menos de década, hoje estão sendo implementados
 
 Diante disso novas promessas de mercado surgem, causando o crescimento de algunas indústrias enquanto outras tendem à 
-obsolescência. É evidente que a indústria que tira maior benefício
+obsolescência. 
 
 # Concepção 
 
