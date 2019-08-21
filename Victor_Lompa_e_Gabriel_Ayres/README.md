@@ -22,6 +22,11 @@ Alunos:
 
 O termo indústria 4.0 é de origem alemã e remete à teórica quarta revolução industrial. Essa seria caracterizada por novas tecnologias do mundo digital, capazes de incrementar a digitalização já presente na indústria global. 
 
+A tecnologia da informação e os avanços na área da computação trouxeram à realidade modelos de conectividade capazes de mudar a produção em escala global. Conceitos como fábricas (ou transporte) sem envolvimento humano, que eram ficção há menos de década, hoje estão sendo implementados
+
+Diante disso novas promessas de mercado surgem, causando o crescimento de algunas indústrias enquanto outras tendem à 
+obsolescência. É evidente que a indústria que tira maior benefício
+
 # Concepção 
 
 Esse projeto visa aplicar os conhecimentos adquiridos durante o curso e introduzir o processo de desenvolvimento. Junto a isso, iremos ampliar nosso leque de conhecimento ao longo da unidade curricular ao trabalhar com os diversos dispositivos e tecnologias utilizadas para a montagem do produto final, isso é, uma fechadura eletrônica. 
