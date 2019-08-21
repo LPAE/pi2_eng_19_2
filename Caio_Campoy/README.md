@@ -11,8 +11,8 @@
 
 # Introdução
 ## INDÚSTRIA 4.0
-A indústria global está em um momento significatívo de mudanças e transformações devido à digitalização da manufatura.
-Está transição é tão grande que está sendo denominada como Indústria 4.0, representando a quarta revolução do processo industrial.
+A indústria global está em um momento significatívo de mudanças e transformações devido à integração de processos digitais na manufatura.
+Essa transição é tão grande que está sendo denominada como Indústria 4.0, representando a quarta revolução do processo industrial.
 
 Tal revolução é dada majoritariamente pela integração de sistemas inteligentes para controlar os processos de produção, aumentando consideravelmente a efecificiência de tais processos.
 
