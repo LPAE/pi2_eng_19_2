@@ -20,11 +20,11 @@ Alunos:
 
 # Introdução 
 
-O termo indústria 4.0 é de origem alemã e remete à teórica quarta revolução industrial. Essa seria caracterizada por novas tecnologias do mundo digital, capazes de incrementar a digitalização já presente na indústria global. 
+O termo indústria 4.0 é de origem alemã e remete à chamada quarta revolução industrial. Essa é caracterizada por novas tecnologias do mundo digital, que incrementam a digitalização já presente na indústria e têm o potencial de redefinir a mesma.
 
-A tecnologia da informação e os avanços na área da computação trouxeram à realidade modelos de conectividade capazes de mudar a produção em escala global. Conceitos como fábricas (ou transporte) sem envolvimento humano, que eram ficção há menos de década, hoje estão sendo implementados
+O progresso em relação à última revolução industrial é definido pelas àreas da informação e computação. Um fator diferencial para as duas é o atual poder nos sistemas embarcados, que torna realidade o conceitos como a Internet das Coisas.
 
-Diante disso novas promessas de mercado surgem, causando o crescimento de algunas indústrias enquanto outras tendem à 
+Diante disso novas promessas de mercado surgem, resultando no crescimento de algunas indústrias enquanto outras tendem à 
 obsolescência. 
 
 # Concepção 
