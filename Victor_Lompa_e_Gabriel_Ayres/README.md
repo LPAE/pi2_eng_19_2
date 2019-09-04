@@ -38,12 +38,8 @@ Como visto nos conceitos de indústria 4.0, sistemas eletrônicos são multifunc
 * Maior resistência por menos espaço, isso é, um mecanismo acionado por eletricidade tem mais poder por espaço que um dependente de energia mecânica 
 * Medidas ofensivas contra um possível invasor, comunicando a brecha com um simples alarme e/ou digitalmente para uma rede de pessoas. 
 
-As vantagens acima caracterizam as tecnologias que serão usadas nesse projeto, no que diz respeito à elas, teremos o seguinte conjunto como alvo:
-```sh
-Fechadura eletrônica
-Dispositivos para o comando da fechadura
-Ferramentas de monitoramento
-Computador para o controle das operações
-Interface entre usuário e controle
-```
+As vantagens acima caracterizam as tecnologias que serão usadas nesse projeto. O acionamento da fechadura será controlado por um Arduino MEGA, que enviará um sinal para a abertura da mesma caso o usuário insira a senha correta em um teclado matricial. A interface incluirá um Display 16x2 que informará o status da operação junto a um buzzer que responderá ao sucesso ou não. Ultilizando um conector bluetooth, o Arduino se comunicará com um aplicativo desenvolvido de dispositivos móveis para que possa ser feito o monitoramento de entrada e saída pelo usuário.
+
 Em parceria com a unidade curricular de Eletrônica 1 serão desenvolvidos circuitos eletrônicos que fazem parte dos grupos citados acima, nisso está inclusa uma fonte de alimentação para o projeto. A seguir são especificadas as diferentes partes aqui comentadas, levando em conta a disponibilidade dos equipamentos no inventário do câmpus.
+
+# Design
