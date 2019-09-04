@@ -9,7 +9,7 @@ Alunos:
 * Victor Lompa Schwider
 * Gabriel Ayres Rodrigues
 
-# Sumário
+## Sumário
 
 1. Introdução
 2. Concepção
@@ -18,7 +18,7 @@ Alunos:
 5. Operacionalização
 6. Referências
 
-# Introdução 
+## Introdução 
 
 O termo indústria 4.0 é de origem alemã e remete à chamada quarta revolução industrial. Essa é caracterizada por novas tecnologias do mundo digital, que incrementam a digitalização já presente na indústria e têm o potencial de redefinir a mesma.
 
@@ -27,7 +27,7 @@ O progresso em relação à última revolução industrial é definido pelas àr
 Diante disso novas promessas de mercado surgem, resultando no crescimento de algunas indústrias enquanto outras tendem à 
 obsolescência. 
 
-# Concepção 
+## Concepção 
 
 Esse projeto visa aplicar os conhecimentos adquiridos durante o curso e introduzir o processo de desenvolvimento. Junto a isso, iremos ampliar nosso leque de conhecimento ao longo da unidade curricular ao trabalhar com os diversos dispositivos e tecnologias utilizadas para a montagem do produto final, isso é, uma fechadura eletrônica. 
 
@@ -42,4 +42,6 @@ As vantagens acima caracterizam as tecnologias que serão usadas nesse projeto. 
 
 Em parceria com a unidade curricular de Eletrônica 1 serão desenvolvidos circuitos eletrônicos que fazem parte dos grupos citados acima, nisso está inclusa uma fonte de alimentação para o projeto. A seguir são especificadas as diferentes partes aqui comentadas, levando em conta a disponibilidade dos equipamentos no inventário do câmpus.
 
-# Design
+## Design
+
+### Display 16x2
