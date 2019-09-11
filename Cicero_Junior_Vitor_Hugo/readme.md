@@ -50,6 +50,8 @@ O módulo Wi-fi esp8266-01 será usado para se comunicar com aplicativo para cel
 
 ### Bluetooth
 
+O módulo Módulo Bluetooth HC-05 será usado para se comunicar com um aplicativo para celular atraves de comunicação via Bluetooth, no aplicativo será possivel abrir remotamente a fechadura eletronica.
+
 
 ### Teclado
 
@@ -61,3 +63,4 @@ O leitor RFID possibilita o acesso de usuarios sem a senha, apenas com o cartão
 
 ### Display
 
+O Display gráfico 2.4 “TFT - ILI9341 será usado para a comunicação com o usaurio, mostrando o status do sistema.
