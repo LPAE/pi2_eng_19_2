@@ -40,6 +40,8 @@ Com todos os benefícios que ela proporciona, pode-se esperar que a indústria 4
 
 Este projeto visa resolver o problema do controle de uma fechadura eletrônica de modo a controlar acionamento, sensores, chaves de acesso, acesso remoto e comunicação com o usuário.
 
-O acionamento poderá ser realizado através de 4 modos diferentes, sendo eles, conexão via [wi-fi](#Wi-fi) e [bluetooth](#bluetooth), [teclado matricial](#teclado matricial) e [radiofrequência](#radiofrequência). Desse modo dando uma maior liberdade para os usuários manipularem a fechadura da maneira que melhor convir, aumentando sua eficiência.
+O acionamento poderá ser realizado através de 4 modos diferentes, sendo eles, conexão via [wi-fi](#Wi-fi) e [bluetooth](#bluetooth), [teclado matricial](#tecladomatricial) e [radiofrequência](#radiofrequência). Desse modo dando uma maior liberdade para os usuários manipularem a fechadura da maneira que melhor convir, aumentando sua eficiência.
 
 Para uma maior interação do usuário com o sistema de controle de acesso, o sistema terá 3 LEDs e um [display](#display) que através de textos e sinais luminosos irão informar ao usuário o status do sistema e da fechadura. 
+
+### teclado matricial
