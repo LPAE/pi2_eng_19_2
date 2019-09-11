@@ -46,11 +46,18 @@ Para uma maior interação do usuário com o sistema de controle de acesso, o si
 
 ### Wi-fi
 
+O módulo Wi-fi esp8266-01 será usado para se comunicar com aplicativo para celular atraves do acesso via internet, no aplicativo será possivel a abertura remota da fechadura eletronica.
+
 ### Bluetooth
+
 
 ### Teclado
 
+O teclado Matricial utilizado sera um 4x4 com letras e numeros, possibilitando alterar e criar novas senhas para o acionamento da fechadura.
+
 ### Radiofrêquencia
+
+O leitor RFID possibilita o acesso de usuarios sem a senha, apenas com o cartão cadastrado.
 
 ### Display
 
