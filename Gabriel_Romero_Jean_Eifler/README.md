@@ -49,12 +49,17 @@ Através do CDIO é possível identificar detalhadamente as habilidades que um e
 ## 3. Concepção
 O desafio proposto é implantar meios de destrancar uma fechadura eletrônica não energizada em uma pequena porta de madeira usada para teste.
 
-A primeira observação é a construção de uma fonte para que a fechadura seja alimentada e funcione 
+O primeiro obstáculo encontrado para fazer a fechadura funcionar, é a construção de uma fonte para alimentá-la.
 
-As soluções encontradas foram:
+As soluções para destrancar a fechadura encontradas foram:
 - Teclado matricial;
+    - A função do teclado no projeto é possibilitar que o usuário implemente uma senha, troque a senha, e destranque a fechadura entrando com a senha correta. 
+        - OBS: Por medidas de segurança, somente será possível trocar a senha se o usuário entrar com a senha correta atual.
 - Técnologia RFID (Identificação por Radiofrequência);
+    - O RFID no projeto facilitará ao usuário destrancar a fechadura através da leitura de um chip que poderá estar, por exemplo, num cartão.
 - App de celular.
+    - O aplicativo para smartphones é acrescentado ao projeto a fim de modernizar sutilmente, afinal, atualmente, quando o celular é uma opção de usar como recurso, facilita ao usuário.
+        - A comunicação entre o app mobile e o circuito é realizada através de módulos bluetooth e wi-fi.
 
 Recursos Visuais:
 - LEDs que informem se a fechadura está trancada ou destrancada
@@ -63,6 +68,7 @@ Recursos Visuais:
     - Informar:
         - Senha *CORRETA* ou *INCORRETA*;
         - Fechadura *ABERTA* ou *FECHADA*.
+
 
 Para medidas de segurança do cliente é implementado um alarme.
 
