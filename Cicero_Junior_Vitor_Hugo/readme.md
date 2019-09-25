@@ -46,20 +46,24 @@ Para uma maior interação do usuário com o sistema de controle de acesso, o si
 
 ### Wi-fi
 
-O módulo wi-fi esp8266-01 será usado para se comunicar com aplicativo para celular através do acesso via internet, no aplicativo será possível a abertura remota da fechadura eletrônica.
+Utilizando um módulo wi-fi será possível que o usuário se comunique por meio de aplicativo com a tranca, permitindo seu acionamento via internet de onde estiver.
 
 ### Bluetooth
 
-O módulo bluetooth HC-05 será usado para se comunicar com um aplicativo para celular por meio de comunicação via Bluetooth, no aplicativo será possível abrir remotamente a fechadura eletrônica.
+A tecnologia bluetooth vai somar junto ao wi-fi, dando ao usuário outra alternativa para acionar a tranca através do celular. Assim, mesmo sem acesso à internet, o usuário poderá abrir a fechadura tranquilamente com seu celular ou outro dispositivo móvel.
 
 ### Teclado
 
-O teclado matricial utilizado será um 4x4 com letras de A a D, numeros de 0 a 9 e dois caracteres especiais, possibilitando alterar e criar novas senhas para o acionamento da fechadura.
+Um teclado é necessário para que a tranca tenha uma forma mais simples e acessível para ser ativada, por meio de uma senha configurada pelo próprio usuário. A senha pode ser compartilhada pelo responsável diretamente com aqueles que deseja autorizar o acesso a tranca, facilitando para o emprego da fechadura em salas de empresas ou instituições de ensino.
 
 ### Radiofrêquencia
 
-O leitor RFID possibilita o acesso de usuários sem a senha, apenas com o cartão cadastrado.
+A senha é uma ótima forma de garantir acesso mais direto para a tranca, mas a tecnologia de radiofrequência é ainda melhor. Utilizando apenas um cartão cadastrado o usuário poderá ativar a fechadura.
 
 ### Display
 
-O Display gráfico 2.4 “TFT - ILI9341 será usado para a comunicação com o usuário, mostrando o status do sistema.
+Desejamos que a que a fechadura tenha uma interface otimizada para facilitar a comunicação com o usuário. Utilizando um display gráfico, é possível exibir o status do sistema de forma clara e objetiva.
+
+## Design
+
+Sabemos quais tecnologias vamos adotar para nosso projeto. É necessário agora nos apropriarmos dos dispositivos que melhor se adaptam para o nosso objetivo final. Desenvolvendo o desenho esquemático e croqui, podemos definir melhor os parâmetros para o projeto final.
