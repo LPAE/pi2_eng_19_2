@@ -67,3 +67,19 @@ Desejamos que a que a fechadura tenha uma interface otimizada para facilitar a c
 ## Design
 
 Sabemos quais tecnologias vamos adotar para nosso projeto. É necessário agora nos apropriarmos dos dispositivos que melhor se adaptam para o nosso objetivo final. Desenvolvendo o desenho esquemático e croqui, podemos definir melhor os parâmetros e requisitos mais importantes para estes dispositivos a fim de obter o resultado ideal.
+
+| Tecnologias      | Dispositivos           |
+| -----------------|:----------------------:|
+| Wi-Fi            | esp8266-01             |
+| Bluetooth        | HC-05                  |
+| Radiofrequência  | RFID RDM6300 125KHz    |
+| Display          | LCD 2.4"TFT - ILI9341  |
+| Microcontrolador | Arduino Mega 2560 Rev3 |
+
+1. O módulo wi-fi esp8266-01 é o dispositivo ideal para o projeto, pois, sua conexão com a internet pode ser feita via wi-fi facilitando a sua instalação e portabilidade.
+
+2. O display gráfico escolhido também possui tecnologia touchscreen, dessa forma, ele será usado como display e teclado em nosso projeto.
+
+3. Entre as opções recomendadas para o projeto, o microcontrolador Arduino Mega mostrou-se a melhor opção devido ao grande número de portas de entrada e saída.
+
+
