@@ -67,6 +67,7 @@ Desejamos que a que a fechadura tenha uma interface otimizada para facilitar a c
 ## Design
 
 Sabemos quais tecnologias vamos adotar para nosso projeto. É necessário agora nos apropriarmos dos dispositivos que melhor se adaptam para o nosso objetivo final. Desenvolvendo o desenho esquemático e croqui, podemos definir melhor os parâmetros e requisitos mais importantes para estes dispositivos a fim de obter o resultado ideal.
+![Croqui](https://github.com/LPAE/pi2_eng_19_2/blob/master/Cicero_Junior_Vitor_Hugo/Img/Croqui_pi.jpg)
 
 | Tecnologias      | Dispositivos           |
 | -----------------|:----------------------:|
