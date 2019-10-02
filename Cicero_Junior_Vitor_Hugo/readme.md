@@ -56,7 +56,7 @@ A tecnologia bluetooth vai somar junto ao wi-fi, dando ao usuário outra alterna
 
 Um teclado é necessário para que a tranca tenha uma forma mais simples e acessível para ser ativada, por meio de uma senha configurada pelo próprio usuário. A senha pode ser compartilhada pelo responsável diretamente com aqueles que deseja autorizar o acesso a tranca, facilitando para o emprego da fechadura em salas de empresas ou instituições de ensino.
 
-### Radiofrêquencia
+### Radiofrequência
 
 A senha é uma ótima forma de garantir acesso mais direto para a tranca, mas a tecnologia de radiofrequência é ainda melhor. Utilizando apenas um cartão cadastrado o usuário poderá ativar a fechadura.
 
