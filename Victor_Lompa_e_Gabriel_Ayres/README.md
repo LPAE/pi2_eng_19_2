@@ -43,7 +43,7 @@ As vantagens acima caracterizam as tecnologias que serão usadas nesse projeto. 
 Em parceria com a unidade curricular de Eletrônica 1 serão desenvolvidos circuitos eletrônicos que fazem parte dos grupos citados acima, nisso está inclusa uma fonte de alimentação para o projeto. A seguir são especificadas as diferentes partes aqui comentadas, levando em conta a disponibilidade dos equipamentos no inventário do câmpus.
 
 ## Design
-![Design1](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/Design%201.PNG)
+![Design2](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/Design%202.PNG)
 ![Buzzer](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/Buzzer.png)
 ![TecladoMembrana](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/Teclado%20Membrana%204x4.jpg)
 ![Hc-05](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/Hc-05.png)
