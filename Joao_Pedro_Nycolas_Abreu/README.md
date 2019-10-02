@@ -1,4 +1,5 @@
 
+
 # Projeto Integrador 2 2019_2
 
 Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina - Campus Florianópolis Departamento Acadêmico de Eletrônica Curso de Engenharia Eletrônica
@@ -47,7 +48,7 @@ Serão necessárias algumas tecnologias para o desenvolvimento do projeto, são 
 | ------------------------------- | --------------------------------- | ---------- |
 | Programação e controle de dados | Arduíno Mega                      | 1          |
 | Controle com senha              | Teclado Matricial De Membrana 4x4 | 1          |
-| Controle com sensor RFID        | RC522                             | 1          |
+| Controle com sensor RFID        | RDM6300                             | 1          |
 | Indicação sonora                | Buzzer 5V                         | 1          |
 | Indicação luminosa              | LED                               | 2          |
 | Indicação em display            | Display LCD 16x2                  | 1          |
@@ -66,7 +67,7 @@ O Teclado matricial foi desenvolvido com a finalidade de facilitar a entrada de 
 O teclado será utilizado como uma das maneiras do usuário liberar a trava da porta, através de uma senha predefinida.
 
 ### Controle com sensor RFID
-![enter image description here](https://images-na.ssl-images-amazon.com/images/I/71wuC+BKB4L._SL1500_.jpg)
+![enter image description here](https://www.phippselectronics.com/wp-content/uploads/2018/05/01-3.jpg)
 
 **RFID** (**R**adio **F**requency **ID**entification ou Identificação por radiofrequência) é uma tecnologia que utiliza sinais de rádio e uma etiqueta (tag) RFID para leitura e gravação de dados, é amplamente utilizado diariamente pelas pessoas que utilizam transportes públicos e por grandes empresas para o controle de entrada e saída de funcionários.
 Neste projeto ele será utilizado como uma maneira de liberar a trava da porta, apenas com a aproximação de uma tag ou cartão.
@@ -90,3 +91,5 @@ Esse display LCD tem 16 colunas e 2 linhas, com backlight (luz de fundo) azul e 
 Será utilizado para informar se a senha ou RFID foram aceitos pelo programa, emitindo uma frase de "Bem vindo" no caso de acesso permitido, e uma frase "Tente novamente" no caso de acesso negado.
 
 ### Ativação do dispositivo
+## DESIGN
+![enter image description here](https://i.ibb.co/sy334P2/Whats-App-Image-2019-10-02-at-10-56-10.jpg)
