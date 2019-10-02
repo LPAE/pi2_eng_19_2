@@ -46,4 +46,8 @@ Também será desenvolvido um sistema de segurança para o caso de senha ou crac
 
 Os leds e o display também serão utilizados no momento de configuração de senhas ou cartões, indicando o período de mudança com alternação de cores no led e a palavra “configuração” no display e a confirmação das alterações com a cor verde no LED e “alterações confirmadas” no display.
 
+# **Design**
+
+
+
 
