@@ -28,35 +28,52 @@ No Brasil, uma estimativa feita pela ABDI (Agência Brasileira de Desenvolviment
 
 O cerne do projeto visa buscar uma maior integração e controle de acesso do que antes era uma simples fechadura. Com o advento da tecnologia, podemos hoje transformar uma fechadura comum em algo extremamente tecnológico, controlado e único para os que desejam aplicar suas funcionalidades, que vão desde segurança ao acesso de dados. Alguns periféricos e _features_ são encontradas no projeto para que ele se torne ainda mais sólido.
 
-### 2.1 ARDUINO
+## 3. DESIGN
+
+![Esquemático](https://github.com/LPAE/pi2_eng_19_2/blob/master/Carol_Farias_Luiz_Erthal/esquematico.png)
+
+
+### 3.1 ARDUINO
 
 O microcontrolador que será o cérebro do portão. Por ele se verificam os códigos de acesso, quais funções a fechadura deve executar.
 
-Modelo: Arduino UNO.
+Modelo: Arduino UNO R3.
 
-### 2.2 DISPLAY LCD
+### 3.2 DISPLAY LCD
 
 Interface gráfica onde poderá ser lido informações, mensagens ou avisos.
 
-Modelo:
+Modelo: Display LCD 16x2  RT162-7
 
-### 2.3 SENSOR RFID
+### 3.3 SENSOR RFID
 
 Com esta tecnologia, é possível abrir utilizando uma _tag_ ou cartão de acesso, sem necessidade de uma chave ou senha.
 
-Modelo:
+Modelo: Módulo Leitor RFID-RC522
 
-### 2.4 TECLADO NÚMERICO
+### 3.4 TECLADO NÚMERICO
 
 Teclado númerico simples, com números de zero a nove, onde será possível digitar uma senha específica de cada portão e ser concedido o acesso.
 
-Modelo:
+Modelo: Teclado Matricial 4x3
 
-### 2.5 LEDs
+### 3.5 LEDs
 
 Informação visual para informar a situação do portão. Exemplo: vermelho para trancado, verde para aberto.
 
-## 3. DESIGN
+### 3.6 BOTÃO
+
+Assim, é possível abrir o portão por dentro.
+
+### 3.7 BUZZER
+
+Serve como informação sonora da utilização da fechadura eletrônica, como, por exemplo, um alarme.
+
+### 3.8 SENSOR BLUETOOTH
+
+Com este módulo, o portão eletrônica é capaz de informar os dados de entrada que forma utilizados na fechadura. A informação pode ser vista por meio de um _app_ ou _site_ da fechadura.
+
+Modelo:
 
 ## 4. IMPLEMENTAÇÃO
 
