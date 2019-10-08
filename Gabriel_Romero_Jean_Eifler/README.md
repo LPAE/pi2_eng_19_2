@@ -149,7 +149,7 @@ O shield quando encaixado na placa, basta apenas plugar na rede para tornar o ar
 ### DISPLAY GRÁFICO 2.4 "TFT - ILI9341
 
 ### PLANTA
-
+![Planta_eletronica](https://user-images.githubusercontent.com/50679263/66362256-6573ea00-e958-11e9-9490-36d730cf0f26.jpg)
 ## 5. Implemetação
 ## 6. Operação
 ## 7. Referências
