@@ -83,7 +83,7 @@ O Arduino comandará todos os processos e será responsável de enviar e receber
 
 O Arduino Mega 2560  é a plataforma a ser utilizada para controlar o sistema.
 
-A placa de prototipagem é baseada no microcontrolador microcontrolador ATmega2560, possui 54 pinos de entrada e saída de sinais digitais, 16 entrada analógicas e 4 portas de comunicação serial.
+A placa de prototipagem é baseada no microcontrolador ATmega2560, possui 54 pinos de entrada e saída de sinais digitais, 16 entrada analógicas e 4 portas de comunicação serial.
 - 15 saídas digitais podem ser usadas como saídas PWM (Pulse Width Modulation), Modulação de Largura de Pulso.
 
 ## 4. Design
