@@ -48,6 +48,7 @@ Os leds e o display também serão utilizados no momento de configuração de se
 
 # **Design**
 
+LED bicolor de 3 pinos.
 
 
 
