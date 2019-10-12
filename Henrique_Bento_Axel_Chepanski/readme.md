@@ -332,5 +332,5 @@ Especificações:
 
 ## 4.9 Componentes e Conexões
 
-![]()
+![](https://github.com/LPAE/pi2_eng_19_2/blob/master/Henrique_Bento_Axel_Chepanski/imgpi/PI2_esquematico_bb.png)
 
