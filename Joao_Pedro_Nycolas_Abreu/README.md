@@ -92,4 +92,4 @@ Será utilizado para informar se a senha ou RFID foram aceitos pelo programa, em
 
 ### Ativação do dispositivo
 ## DESIGN
-![enter image description here](https://i.ibb.co/sy334P2/Whats-App-Image-2019-10-02-at-10-56-10.jpg)
+![enter image description here](https://uploaddeimagens.com.br/images/002/430/993/original/print-1.jpg?1571408917)
