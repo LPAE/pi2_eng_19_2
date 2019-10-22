@@ -147,7 +147,7 @@ O módulo BT RS232 HC-05 é um método de comunicação com o Arduino fácil e b
 O shield quando encaixado na placa, basta apenas plugar na rede para tornar o arduino online, também possuí um slot para cartão micro-SD para armazenar arquivos, útil para guardar informações caso a esteja sem rede ethernet.
 
 ### DISPLAY GRÁFICO 2.4 "TFT - ILI9341
-
+![Planta_eletronica](https://user-images.githubusercontent.com/50679263/67342978-2b831600-f50a-11e9-8247-e2a4a076fd85.jpg)
 ### PLANTA
 ## 5. Implemetação
 ## 6. Operação
