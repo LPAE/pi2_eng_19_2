@@ -52,7 +52,8 @@ Serão necessárias algumas tecnologias para o desenvolvimento do projeto, são 
 | Indicação sonora                | Buzzer 5V                         | 1          |
 | Indicação luminosa              | LED                               | 2          |
 | Indicação em display            | Display LCD 16x2                  | 1          |
-| Ativaçãp do dispositivo         | Relé 5V                           | 1          |
+| Ativaçãp do dispositivo         | 4N25 optoacoplador                | 1          |
+| Ativaçãp do dispositivo         | IRF540 transistor                 | 1          |
 
 ### Programação e controle de dados
 ![Arduíno Mega](https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/520x330/604a3538c15e081937dbfbd20aa60aad/a/0/a000067_featured_1_.jpg)
@@ -79,7 +80,7 @@ O buzzer é um componente de geração de ruídos sonoros a partir da excitaçã
 Ele será utilizado neste projeto como aviso sonoro caso seja aceita a senha do teclado, assim como do RFID, e caso sejam negados emitira um som característico.
 
 ### Indicação luminosa
-![enter image description here](http://www.tecnotend.com.br/image/cache/data/Produtos/Prototipagem/led/led_2-500x500.JPG)
+![enter image description here](https://www.pcboard.ca/image/cache/catalog/products/leds/10mm_leds/10mm-color-cycling-led-800x800.jpg)
 
 O LED Trata-se de um componente eletrônico capaz de emitir luz visível transformando energia elétrica em energia luminosa. 
 Será utilizado dois LED's para indicar a situação da trava, se for liberada irá acender um LED verde, caso contrário um LED vermelho acenderá.
@@ -92,4 +93,4 @@ Será utilizado para informar se a senha ou RFID foram aceitos pelo programa, em
 
 ### Ativação do dispositivo
 ## DESIGN
-![enter image description here](https://uploaddeimagens.com.br/images/002/430/993/original/print-1.jpg?1571408917)
+![enter image description here](https://i.screenshot.net/45lmwiy)
