@@ -15,7 +15,7 @@ Alunos:
 2. Concepção
 3. Desenho
 4. Implementação
-5. Operacionalização
+5. Operação
 6. Referências
 
 ## Introdução 
