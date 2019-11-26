@@ -48,3 +48,9 @@ Em parceria com a unidade curricular de Eletrônica 1 foram desenvolvidos circui
 ![LCD](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/LCD16X2.jpg)
 
 ### Display 16x2
+
+## Implementação
+
+## Operação
+
+## Referências bibliográficas
