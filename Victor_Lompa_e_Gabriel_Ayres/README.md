@@ -27,20 +27,17 @@ O progresso em relação à última revolução industrial é definido pelas àr
 Diante disso novas promessas de mercado surgem, resultando no crescimento de algunas indústrias enquanto outras tendem à 
 obsolescência. 
 
+O projeto tem como objetivos integrar os conhecimentos adquiridos durante o curso com a industria 4.0. Para alcançar esses objetivos o projeto foi definido como o desenvolvimento de uma fechadura eletrônica.
+
 ## Concepção 
 
-Esse projeto visa aplicar os conhecimentos adquiridos durante o curso e introduzir o processo de desenvolvimento. Junto a isso, iremos ampliar nosso leque de conhecimento ao longo da unidade curricular ao trabalhar com os diversos dispositivos e tecnologias utilizadas para a montagem do produto final, isso é, uma fechadura eletrônica. 
+A concepção é a etapa em que são definidos os requisitos do projeto e as possíveis propostas para satisfazê-los. 
 
-Sendo um componente de segurança as fechaduras têm sua base nas ideias de controle e confiabilidade. Podemos concluir que as fechaduras eletrônicas superam as convencionais, pois apresentam vantagens nos dois focos. Para uma análise mais específica, vejamos primeiro a questão do controle; uma fechadura eletrônica pode ser acionada por sensores devidamente integrados, por comandos elétricos e, é claro, por uma chave convencional. Assim podemos evitar restrições no que diz respeito ao tempo da operação, distância e pessoal envolvido; o que nos leva à confiabilidade.
+A fechadura deve apresentar para o usuário uma resposta (visual e sonora) da operação. Deve ser o controlada das três seguintes formas: Via computador, celular e diretamente na fechadura (sem o uso da chave). 
 
-Como visto nos conceitos de indústria 4.0, sistemas eletrônicos são multifuncionais. Essa complexidade agrega solidez ao conjunto, tornando-o mais difícil de ser violado. Além disso, a versatilidade possibilita respostas superiores em relação à quebra da segurança. Alguns exemplos são: 
-* Monitoramento do local, feito pelo registro de atividade, muitas vezes visual
-* Maior resistência por menos espaço, isso é, um mecanismo acionado por eletricidade tem mais poder por espaço que um dependente de energia mecânica 
-* Medidas ofensivas contra um possível invasor, comunicando a brecha com um simples alarme e/ou digitalmente para uma rede de pessoas. 
+Para a interface são utilizados um display gráfico (TFT ILI9431) e um buzzer (sirene). O acesso com celular é feito com o módulo bluetooth (HC-05) e a partir do computador com o módulo ethernet (W5100). O acesso diretamente pela fechadura é feito usando o  TouchScreen do display TFT e também pelos TAGs cadastrados no módulo RFID RDM6300 (Módulo de identificação por radiofrequência).  Todos os módulos e componentes são controlados pela placa de prototipagem Arduino MEGA, sendo que essa e todos os acima citados foram disponibilizados pelo IFSC. 
 
-As vantagens acima caracterizam as tecnologias que serão usadas nesse projeto. O acionamento da fechadura será controlado por um Arduino MEGA, que enviará um sinal para a abertura da mesma caso o usuário insira a senha correta em um teclado matricial. A interface incluirá um Display 16x2 que informará o status da operação junto a um buzzer que responderá ao sucesso ou não. Ultilizando um conector bluetooth, o Arduino se comunicará com um aplicativo desenvolvido de dispositivos móveis para que possa ser feito o monitoramento de entrada e saída pelo usuário.
-
-Em parceria com a unidade curricular de Eletrônica 1 serão desenvolvidos circuitos eletrônicos que fazem parte dos grupos citados acima, nisso está inclusa uma fonte de alimentação para o projeto. A seguir são especificadas as diferentes partes aqui comentadas, levando em conta a disponibilidade dos equipamentos no inventário do câmpus.
+Em parceria com a unidade curricular de Eletrônica 1 foram desenvolvidos circuitos eletrônicos para fazer algumas conexões do sistema — como a conexão entre o Arduino e a própria fechadura.
 
 ## Design
 ![Design2](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/Design%202.PNG)
