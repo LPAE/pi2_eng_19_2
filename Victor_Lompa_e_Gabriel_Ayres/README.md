@@ -13,7 +13,7 @@ Alunos:
 
 1. Introdução
 2. Concepção
-3. Desenho
+3. Design
 4. Implementação
 5. Operação
 6. Referências
