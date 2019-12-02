@@ -100,16 +100,25 @@ Aqui existe um Código
 
 ## Operação
 Citar Blynk aqui
+
 Terminar Design
+
 Terminar TFT
+
 Adicionar Código
+
 Adicionar todas as referências
 
 ## Referências bibliográficas
 Indústria 4.0: 
+
 Shield Ethernet: https://www.baudaeletronica.com.br/ethernet-shield-w5100-para-arduino.html
+
 Módulo Bluetooth:
+
 Módulo RFID: https://www.mschoeffler.de/2018/01/05/arduino-tutorial-how-to-use-the-rdm630-rdm6300-rfid-reader/
+
 Display TFT:
+
 Octoacoplador: http://www.vishay.com/docs/83725/4n25.pdf
 
