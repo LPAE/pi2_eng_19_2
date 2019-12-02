@@ -41,11 +41,13 @@ Em parceria com a unidade curricular de Eletrônica 1 foram desenvolvidos circui
 
 O shield ethernet foi projetado para que pudesse ser conectado diretamente em cima do arduino portanto, na tentantiva de não tornar o projeto muito grande, montamos um esquemático que pudesse encaixar no espaço que não foi ultilizado pelo W5100 e assim aproveitar e planejar melhor o espaço e os pinos do arduino que temos disponível.
 
+
 ![Esquemático](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/Esquem%C3%A1tico.PNG)
+
 
 Após a impressão e corrosão da PCB, observamos que as trilhas precisariam ser muito mais grossas devido à alta corrente da fechadura que passaria por ela, então abandonamos o esquemático inicial e optamos por produzir a placa usando uma placa universal, que se mostrou mais fácil em questão de organização já que contém o espaço entre-pinos ideal para o nosso trabalho. 
 
-![PCB](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/PCBesq.jpg)
+![PCB](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/PCB.jpg)
 
 O display TFT, assim como o shield ethernet, foi projetado para se encaixar diretamente em cima do arduino e, no nosso caso, ele poderia ser encaixado em cima do ethernet pois usa os mesmo pinos porém, pensando no resultado final, analisamos a possibilidade de ultilizar jumpers para afastar o LCD do arduino e incliná-lo a uma angulação boa para que o usuário final possa digitar a senha de forma mais agradável.
 
