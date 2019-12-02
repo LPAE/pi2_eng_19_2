@@ -52,6 +52,7 @@ Após a impressão e corrosão da PCB, observamos que as trilhas precisariam ser
 ![PCB](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/PCBesq.jpg)
 
 O display TFT, assim como o shield ethernet, foi projetado para se encaixar diretamente em cima do arduino e, no nosso caso, ele poderia ser encaixado em cima do ethernet pois usa os mesmo pinos porém, pensando no resultado final, analisamos a possibilidade de ultilizar jumpers para afastar o LCD do arduino e incliná-lo a uma angulação boa para que o usuário final possa digitar a senha de forma mais agradável.
+
 Para armazenar e proteger todos os dispositivos e ligações elétricas e eletrônicas, pensamos em um compartimento 
 
 ## Implementação
@@ -67,7 +68,9 @@ Para que seja possível implementar estas tecnologias com o arduino e usá-las p
 
 ![Hc-05](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/HC-05.png)
 
-É um módulo feito para arduino e outros microprocessadores que faz conexão bluetooth por meio de portas seriais. Pode ser uma ótima forma de comunicação sem fio entre arduino e dispositivos que possuam bluetooth como computadores e celulares visto que pode enviar e receber informações com algumas linhas de código e por um preço acessível. Possui um total de 6 (seis) pinos mas, como usaremos ele apenas para enviar informações referentes à abertura e fechamento da porta e não para receber, usaremos 4 (quatro) desses pinos: Rx, Tx e os pinos de alimentação VCC e GND.
+É um módulo feito para arduino e outros microprocessadores que faz conexão bluetooth por meio de portas seriais. Pode ser uma ótima forma de comunicação sem fio entre arduino e dispositivos que possuam bluetooth como computadores e celulares visto que pode enviar e receber informações com algumas linhas de código e por um preço acessível. 
+
+Possui um total de 6 (seis) pinos mas, como usaremos ele apenas para enviar informações referentes à abertura e fechamento da porta e não para receber, usaremos 4 (quatro) desses pinos: Rx, Tx e os pinos de alimentação VCC e GND.
 
 ### 4N25 - Octoacoplador
 
@@ -79,13 +82,17 @@ Para isolar o circuito do arduino com portas que podem fornecer no máximo 50mA 
 
 ![RDM6300](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/RDM6300.jpg)
 
-O Módulo RDM6300 faz a leitura de tags e cartões RFID na frequência de 125KHz ultilizando para a comunicação com os microprocessadores portas seriais. É alimentado com 5V, possibilitando que seja alimentado diretamente pelo arduino. Sua lógica de programação no arduino consiste basicamente em aguardar o recebimento de algum valor vindo do módulo, observar se o tamanho da informação recebida é consistente com o valor esperado de uma tag 125KHz e decodificar o valor recebido para poder compará-lo com os valores de tag aceitos para a abertura da porta.
+O Módulo RDM6300 faz a leitura de tags e cartões RFID na frequência de 125KHz ultilizando para a comunicação com os microprocessadores portas seriais. É alimentado com 5V, possibilitando que seja alimentado diretamente pelo arduino. 
+
+Sua lógica de programação no arduino consiste basicamente em aguardar o recebimento de algum valor vindo do módulo, observar se o tamanho da informação recebida é consistente com o valor esperado de uma tag 125KHz e decodificar o valor recebido para poder compará-lo com os valores de tag aceitos para a abertura da porta.
 
 ### ILI9341 - Display LCD
 
 ![ILI9341](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/ILI9341.jpg)
 
-O ILI9341 é um display pixels TFT (transístor de película fina) LCD (display de cristal líquido) para microprocessadores que possui Touchscreen e uma resolução 240x320 RGB. Apesar de o seu funcionamento ser um pouco mais complexo, sua programação é simples e, como foi projetado para microprocessadores como o arduino, seus pinos encaixam perfeitamente com as portas do arduino, facilitando sua instalação. Para programá-lo,
+O ILI9341 é um display pixels TFT (transístor de película fina) LCD (display de cristal líquido) para microprocessadores que possui Touchscreen e uma resolução 240x320 RGB. Apesar de o seu funcionamento ser um pouco mais complexo, sua programação é simples e, como foi projetado para microprocessadores como o arduino, seus pinos encaixam perfeitamente com as portas do arduino, facilitando sua instalação. 
+
+Para programá-lo,
 
 ### W5100 - Shield Ethernet
 
@@ -99,7 +106,9 @@ Aqui existe um Código
 ```
 
 ## Operação
-Citar Blynk aqui
+Indústria 4.0
+
+Operação (Blynk)
 
 Terminar Design
 
