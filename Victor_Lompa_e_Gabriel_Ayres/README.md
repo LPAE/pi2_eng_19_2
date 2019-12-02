@@ -76,8 +76,21 @@ Para que seja possível implementar estas tecnologias com o arduino e usá-las p
 Para isolar o circuito do arduino com portas que podem fornecer no máximo 50mA do circuito da fechadura que precisa de uma corrente mais alta, podendo drenar até 2.72A para abrir, usamos um Octoacoplador constituido de um diodo emissor de luz infravermelho e um fototransistor de silício NPN que receberá o o infravermelho e será polarizado assim que o diodo for alimentado com os 5V da porta digital que conectaremos do Arduino, acionando o circuito de alta corrente e abrindo a fechadura.
 
 ### RDM6300 - Leitor RFID
+
+![RDM6300](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/RDM6300.png)
+
+O Módulo RDM6300 faz a leitura de tags e cartões RFID na frequência de 125KHz ultilizando para a comunicação com os microprocessadores portas seriais. É alimentado com 5V, possibilitando que seja alimentado diretamente pelo arduino. Sua lógica de programação no arduino consiste basicamente em aguardar o recebimento de algum valor vindo do módulo, observar se o tamanho da informação recebida é consistente com o valor esperado de uma tag 125KHz e decodificar o valor recebido para poder compará-lo com os valores de tag aceitos para a abertura da porta.
+
 ### ILI9341 - Display LCD
+
+![ILI9341](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/ILI9341.png)
+
+O ILI9341 é um display pixels TFT (transístor de película fina) LCD (display de cristal líquido) para microprocessadores que possui Touchscreen e uma resolução 240x320 RGB. Apesar de o seu funcionamento ser um pouco mais complexo, sua programação é simples e, como foi projetado para microprocessadores como o arduino, seus pinos encaixam perfeitamente com as portas do arduino. Para programá-lo,
+
 ### W5100 - Shield Ethernet
+
+![W5100](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/W5100.png)
+
 
 ## Operação
 
