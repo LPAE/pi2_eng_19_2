@@ -85,13 +85,27 @@ O Módulo RDM6300 faz a leitura de tags e cartões RFID na frequência de 125KHz
 
 ![ILI9341](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/ILI9341.jpg)
 
-O ILI9341 é um display pixels TFT (transístor de película fina) LCD (display de cristal líquido) para microprocessadores que possui Touchscreen e uma resolução 240x320 RGB. Apesar de o seu funcionamento ser um pouco mais complexo, sua programação é simples e, como foi projetado para microprocessadores como o arduino, seus pinos encaixam perfeitamente com as portas do arduino. Para programá-lo,
+O ILI9341 é um display pixels TFT (transístor de película fina) LCD (display de cristal líquido) para microprocessadores que possui Touchscreen e uma resolução 240x320 RGB. Apesar de o seu funcionamento ser um pouco mais complexo, sua programação é simples e, como foi projetado para microprocessadores como o arduino, seus pinos encaixam perfeitamente com as portas do arduino, facilitando sua instalação. Para programá-lo,
 
 ### W5100 - Shield Ethernet
 
 ![W5100](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/ETHERNET.jpg)
 
+Este shield permite que o arduino se conecte via internet, fornecendo acesso à rede (IP) nos protocolos TCP ou UDP. Foi projetado para ser compatível em pinos com as versões mais tradicionais de arduino, incluindo o arduino MEGA que é o que nos interessa. 
+
+### Código - A programação
+```
+Aqui existe um Código
+```
 
 ## Operação
+Citar Blynk
 
 ## Referências bibliográficas
+Indústria 4.0: 
+Shield Ethernet: https://www.baudaeletronica.com.br/ethernet-shield-w5100-para-arduino.html
+Módulo Bluetooth:
+Módulo RFID: https://www.mschoeffler.de/2018/01/05/arduino-tutorial-how-to-use-the-rdm630-rdm6300-rfid-reader/
+Display TFT:
+Octoacoplador: http://www.vishay.com/docs/83725/4n25.pdf
+
