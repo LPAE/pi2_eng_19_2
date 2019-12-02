@@ -20,14 +20,12 @@ Alunos:
 
 ## Introdução 
 
-O termo indústria 4.0 é de origem alemã e remete à chamada quarta revolução industrial. É caracterizada por novas tecnologias do mundo digital, que incrementam a digitalização já presente na indústria e têm o potencial de redefini-la.
+O termo indústria 4.0 é de origem alemã e remete à chamada quarta revolução industrial. É caracterizada por novas tecnologias do mundo digital, que incrementam a digitalização já presente na indústria e têm o potencial de redefini-la. Ela representa uma mudança na maneira de viver, trabalhar e se relacionar, visando um maior alcance, rapidez e impacto. Leva o nome de quarta revolução visto que se encaminha para a automação total das indústrias.
 
-O progresso em relação à última revolução industrial é definido pelas àreas da informação e computação. Um fator diferencial para as duas é o atual poder nos sistemas embarcados, que torna realidade o conceitos como a Internet das Coisas.
-
-Diante disso novas promessas de mercado surgem, resultando no crescimento de algunas indústrias enquanto outras tendem à 
+O progresso em relação à última revolução industrial é definido pelas àreas da informação e computação. Um fator diferencial para as duas é o atual poder nos sistemas embarcados, que torna realidade o conceitos como a Internet das Coisas. Diante disso novas promessas de mercado surgem, resultando no crescimento de algunas indústrias enquanto outras tendem à 
 obsolescência. 
 
-O projeto tem como objetivos integrar os conhecimentos adquiridos durante o curso com a industria 4.0. Para alcançar esses objetivos o projeto foi definido como o desenvolvimento de uma fechadura eletrônica.
+Neste contexto de automação, buscar e implementar tecnologias que facilitem e agilizem tarefas pode ser fundamental para acompanhar as mudanças nos paradigmas tecnológicos. Pensando nisso, nosso projeto tem como objetivos integrar os conhecimentos adquiridos durante o curso com a industria 4.0. Para alcançar esses objetivos o projeto foi definido como o desenvolvimento de uma fechadura eletrônica e a implementação de diferentes tecnologias.
 
 ## Concepção 
 
