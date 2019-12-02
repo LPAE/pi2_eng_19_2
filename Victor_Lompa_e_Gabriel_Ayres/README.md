@@ -29,11 +29,9 @@ Neste contexto de automação, buscar e implementar tecnologias que facilitem e 
 
 ## Concepção 
 
-A concepção é a etapa em que são definidos os requisitos do projeto e as possíveis propostas para satisfazê-los. 
+A concepção é a etapa em que são definidos os requisitos do projeto e as possíveis propostas para satisfazê-los. A fechadura deve apresentar para o usuário uma resposta visual e sonora da operação. Deve ser o controlada das três seguintes formas: Via computador, celular e diretamente na fechadura (sem o uso da chave). 
 
-A fechadura deve apresentar para o usuário uma resposta (visual e sonora) da operação. Deve ser o controlada das três seguintes formas: Via computador, celular e diretamente na fechadura (sem o uso da chave). 
-
-Para a interface são utilizados um display gráfico (TFT ILI9431) e um buzzer (sirene). O acesso com celular é feito com o módulo bluetooth (HC-05) e a partir do computador com o módulo ethernet (W5100). O acesso diretamente pela fechadura é feito usando o  TouchScreen do display TFT e também pelos TAGs cadastrados no módulo RFID RDM6300 (Módulo de identificação por radiofrequência).  Todos os módulos e componentes são controlados pela placa de prototipagem Arduino MEGA, sendo que essa e todos os acima citados foram disponibilizados pelo IFSC. 
+Para a interface são utilizados um display gráfico TFT (ILI9431) e um buzzer (sirene). O acesso com celular é feito com o módulo bluetooth (HC-05) e a partir do computador com o módulo ethernet (W5100). O acesso diretamente pela fechadura é feito usando o  TouchScreen do display TFT e também pelos TAGs cadastrados no módulo RFID RDM6300 (Módulo de identificação por radiofrequência).  Todos os módulos e componentes são controlados pela placa de prototipagem Arduino MEGA, sendo que essa e todos os acima citados foram disponibilizados pelo IFSC. 
 
 Em parceria com a unidade curricular de Eletrônica 1 foram desenvolvidos circuitos eletrônicos para fazer algumas conexões do sistema — a conexão entre o Arduino e a própria fechadura, por exemplo. Essas são detalhadas na etapa seguinte.
 
@@ -80,9 +78,9 @@ Para isolar o circuito do arduino com portas que podem fornecer no máximo 50mA 
 
 ![RDM6300](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/RDM6300.jpg)
 
-O Módulo RDM6300 faz a leitura de tags e cartões RFID na frequência de 125KHz ultilizando para a comunicação com os microprocessadores portas seriais. É alimentado com 5V, possibilitando que seja alimentado diretamente pelo arduino. 
+O Módulo RDM6300 faz a leitura de TAGs e cartões RFID na frequência de 125KHz ultilizando para a comunicação com os microprocessadores portas seriais. É alimentado com 5V, possibilitando que seja alimentado diretamente pelo arduino. 
 
-Sua lógica de programação no arduino consiste basicamente em aguardar o recebimento de algum valor vindo do módulo, observar se o tamanho da informação recebida é consistente com o valor esperado de uma tag 125KHz e decodificar o valor recebido para poder compará-lo com os valores de tag aceitos para a abertura da porta.
+Sua lógica de programação no arduino consiste basicamente em aguardar o recebimento de algum valor vindo do módulo, observar se o tamanho da informação recebida é consistente com o valor esperado de uma TAG 125KHz e decodificar o valor recebido para poder compará-lo com os valores aceitos para a abertura da porta.
 
 ### ILI9341 - Display LCD
 
