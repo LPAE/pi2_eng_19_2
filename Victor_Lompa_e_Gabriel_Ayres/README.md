@@ -40,6 +40,7 @@ Para a interface são utilizados um display gráfico (TFT ILI9431) e um buzzer (
 Em parceria com a unidade curricular de Eletrônica 1 foram desenvolvidos circuitos eletrônicos para fazer algumas conexões do sistema — a conexão entre o Arduino e a própria fechadura, por exemplo. Essas são detalhadas na etapa seguinte.
 
 ## Design
+
 ![Design3](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/Esbo%C3%A7o%203.jpg)
 
 O shield ethernet foi projetado para que pudesse ser conectado diretamente em cima do arduino portanto, na tentantiva de não tornar o projeto muito grande, montamos um esquemático que pudesse encaixar no espaço que não foi ultilizado pelo W5100 e assim aproveitar e planejar melhor o espaço e os pinos do arduino que temos disponível.
@@ -47,23 +48,36 @@ O shield ethernet foi projetado para que pudesse ser conectado diretamente em ci
 ![Esquemático](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/Esquem%C3%A1tico.PNG)
 
 Após a impressão e corrosão da PCB, observamos que as trilhas precisariam ser muito mais grossas devido à alta corrente da fechadura que passaria por ela, então abandonamos o esquemático inicial e optamos por produzir a placa usando uma placa universal, que se mostrou mais fácil em questão de organização já que contém o espaço entre-pinos ideal para o nosso trabalho. 
+
 ![PCB](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/PCBesq.jpg)
 
 O display TFT, assim como o shield ethernet, foi projetado para se encaixar diretamente em cima do arduino e, no nosso caso, ele poderia ser encaixado em cima do ethernet pois usa os mesmo pinos porém, pensando no resultado final, analisamos a possibilidade de ultilizar jumpers para afastar o LCD do arduino e incliná-lo a uma angulação boa para que o usuário final possa digitar a senha de forma mais agradável.
 Para armazenar e proteger todos os dispositivos e ligações elétricas e eletrônicas, pensamos em um compartimento 
 
 ## Implementação
+Para que seja possível implementar estas tecnologias com o arduino e usá-las para este projeto, devemos entender o funcionamento de nossos componentes e aprender a programá-los.
+
 ### Buzzer - Sinalização
+
 ![Buzzer](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/Buzzer2.png)
 
-É um dispositivo que emite um som contínuo quando alimentado com 5V. Em nosso caso, ele será alimentado por um pino digital do arduino, nos dando a possibilidade de configurar por quanto tempo ele ficará ativo adicionando um delay no código.
+É um dispositivo que emite um som contínuo quando alimentado com 5V. Em nosso caso, um de seus 2 (dois) pinos irá diretamente no GND e outro será alimentado por uma porta digital do arduino, nos dando a possibilidade de configurar se ele ficará ativo e por quanto tempo ele ficará ativo adicionando um delay no código.
 
 ### HC-05 - Módulo Bluetooth
+
 ![Hc-05](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/HC-05.png)
 
-É um módulo que faz conexão bluetooth
+É um módulo feito para arduino e outros microprocessadores que faz conexão bluetooth por meio de portas seriais. Pode ser uma ótima forma de comunicação sem fio entre arduino e dispositivos que possuam bluetooth como computadores e celulares visto que pode enviar e receber informações com algumas linhas de código e por um preço acessível. Possui um total de 6 (seis) pinos mas, como usaremos ele apenas para enviar informações referentes à abertura e fechamento da porta e não para receber, usaremos 4 (quatro) desses pinos: Rx, Tx e os pinos de alimentação VCC e GND.
+
+### 4N25 - Octoacoplador
 
 ![4N25](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/4N25.png)
+
+Para isolar o circuito do arduino com portas que podem fornecer no máximo 50mA do circuito da fechadura que precisa de uma corrente mais alta, podendo drenar até 2.72A para abrir, usamos um Octoacoplador constituido de um diodo emissor de luz infravermelho e um fototransistor de silício NPN que receberá o o infravermelho e será polarizado assim que o diodo for alimentado com os 5V da porta digital que conectaremos do Arduino, acionando o circuito de alta corrente e abrindo a fechadura.
+
+### RDM6300 - Leitor RFID
+### ILI9341 - Display LCD
+### W5100 - Shield Ethernet
 
 ## Operação
 
