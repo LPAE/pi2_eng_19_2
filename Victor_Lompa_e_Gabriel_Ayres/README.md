@@ -43,7 +43,10 @@ Em parceria com a unidade curricular de Eletrônica 1 foram desenvolvidos circui
 ![Design3](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/Esbo%C3%A7o%203.jpg)
 O shield ethernet foi projetado para que pudesse ser conectado diretamente em cima do arduino portanto, na tentantiva de não tornar o projeto muito grande, montamos um esquemático que pudesse encaixar no espaço que não foi ultilizado pelo W5100 e assim aproveitar e planejar melhor o espaço e os pinos do arduino que temos disponível.
 
-![Esquemático](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/Esquemático.png)
+![Esquemático](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/Esquem%C3%A1tico.PNG)
+![PCB](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/PCB.jpg)
+
+Após a impressão e corrosão da PCB, observamos que as trilhas precisariam ser muito mais grossas devido à alta corrente da fechadura que passaria por ela, então abandonamos o esquemático inicial e optamos por produzir a placa usando uma placa universal, que se mostrou mais fácil em questão de organização já que contém o espaço entre-pinos ideal para o nosso trabalho.
 
 ## Implementação
 ![Buzzer](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/Buzzer2.png)
