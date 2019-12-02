@@ -71,7 +71,7 @@ Para que seja possível implementar estas tecnologias com o arduino e usá-las p
 
 ### 4N25 - Octoacoplador
 
-![4N25](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/4N25.png)
+![4N25](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/4N25.png) ![4N25.2](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/4N25.2.png)
 
 Para isolar o circuito do arduino com portas que podem fornecer no máximo 50mA do circuito da fechadura que precisa de uma corrente mais alta, podendo drenar até 2.72A para abrir, usamos um Octoacoplador constituido de um diodo emissor de luz infravermelho e um fototransistor de silício NPN que receberá o o infravermelho e será polarizado assim que o diodo for alimentado com os 5V da porta digital que conectaremos do Arduino, acionando o circuito de alta corrente e abrindo a fechadura.
 
