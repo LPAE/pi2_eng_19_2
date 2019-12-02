@@ -53,6 +53,7 @@ Após a impressão e corrosão da PCB, observamos que as trilhas precisariam ser
 
 O display TFT, assim como o shield ethernet, foi projetado para se encaixar diretamente em cima do arduino e, no nosso caso, ele poderia ser encaixado em cima do ethernet pois usa os mesmo pinos porém, pensando no resultado final, analisamos a possibilidade de ultilizar jumpers para afastar o LCD do arduino e incliná-lo a uma angulação boa para que o usuário final possa digitar a senha de forma mais agradável.
 Para armazenar e proteger todos os dispositivos e ligações elétricas e eletrônicas, pensamos em um compartimento 
+##### CONTINUA
 
 ## Implementação
 Para que seja possível implementar estas tecnologias com o arduino e usá-las para este projeto, devemos entender o funcionamento de nossos componentes e aprender a programá-los.
@@ -86,6 +87,7 @@ O Módulo RDM6300 faz a leitura de tags e cartões RFID na frequência de 125KHz
 ![ILI9341](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/ILI9341.jpg)
 
 O ILI9341 é um display pixels TFT (transístor de película fina) LCD (display de cristal líquido) para microprocessadores que possui Touchscreen e uma resolução 240x320 RGB. Apesar de o seu funcionamento ser um pouco mais complexo, sua programação é simples e, como foi projetado para microprocessadores como o arduino, seus pinos encaixam perfeitamente com as portas do arduino, facilitando sua instalação. Para programá-lo,
+##### CONTINUA
 
 ### W5100 - Shield Ethernet
 
@@ -96,6 +98,7 @@ Este shield permite que o arduino se conecte via internet, fornecendo acesso à 
 ### Código - A programação
 ```
 Aqui existe um Código
+##### CONTINUA
 ```
 
 ## Operação
