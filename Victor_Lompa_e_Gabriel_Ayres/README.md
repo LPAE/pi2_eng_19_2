@@ -49,7 +49,20 @@ Após a impressão e corrosão da PCB, observamos que as trilhas precisariam ser
 
 O display TFT, assim como o shield ethernet, foi projetado para se encaixar diretamente em cima do arduino e, no nosso caso, ele poderia ser encaixado em cima do ethernet pois usa os mesmo pinos porém, pensando no resultado final, analisamos a possibilidade de ultilizar jumpers para afastar o LCD do arduino e incliná-lo a uma angulação boa para que o usuário final possa digitar a senha de forma mais agradável.
 
-Para armazenar e proteger todos os dispositivos e ligações elétricas e eletrônicas, pensamos em um compartimento 
+Para armazenar e proteger todos os dispositivos e ligações elétricas e eletrônicas, pensamos em um compartimento...
+
+Em resumo, tudo que precisamos pode ser listado em uma tabela simples que vincula o objetivo a ser alcançado com a tecnologia implementada.
+
+OBJETIVO | TECNOLOGIA | QUANTIDADE
+---------|----------|---------
+Segurança do Arduino| Octoacoplador | 1
+Acesso Rápido | Sensor RFID | 1
+Acesso com senha | Display TFT | 1 
+Interface | Display TFT | 1
+Sinalização | Buzzer | 1
+Comando | Arduino Mega 2560 | 1
+-- | Módulo Bluetooth | 1
+-- | Ethernet | 1
 
 ## Implementação
 Para que seja possível implementar estas tecnologias com o arduino e usá-las para este projeto, devemos entender o funcionamento de nossos componentes e aprender a programá-los.
