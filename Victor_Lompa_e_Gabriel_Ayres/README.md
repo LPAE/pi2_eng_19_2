@@ -99,15 +99,13 @@ Sua lógica de programação no arduino consiste basicamente em aguardar o receb
 
 ![ILI9341](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/ILI9341.jpg)
 
-O ILI9341 é um display pixels TFT (transístor de película fina) LCD (display de cristal líquido) para microprocessadores que possui Touchscreen e uma resolução 240x320 RGB. Apesar de o seu funcionamento ser um pouco mais complexo, sua programação é simples e, como foi projetado para microprocessadores como o arduino, seus pinos encaixam perfeitamente com as portas do arduino, facilitando sua instalação. 
-
-Para programá-lo,
+O ILI9341 é um display pixels TFT (transístor de película fina) LCD (display de cristal líquido) para microprocessadores que possui Touchscreen e uma resolução 240x320 RGB. Apesar de o seu funcionamento ser um pouco mais complexo, sua programação é simples e, como foi projetado para microprocessadores como o arduino, seus pinos encaixam perfeitamente com as portas do arduino, facilitando sua instalação.
 
 ### W5100 - Shield Ethernet
 
 ![W5100](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/ETHERNET.jpg)
 
-Este shield permite que o arduino se conecte via internet, fornecendo acesso à rede (IP) nos protocolos TCP ou UDP. Foi projetado para ser compatível em pinos com as versões mais tradicionais de arduino, incluindo o arduino MEGA que é o que nos interessa. 
+Este shield permite que o arduino se conecte via internet, fornecendo acesso à rede (IP) nos protocolos TCP ou UDP. Foi projetado para ser compatível em pinos com as versões mais tradicionais de arduino, incluindo o arduino MEGA que é o que nos interessa. Para programá-lo, diversos sites e softwares oferecem aplicativos já feitos pensando nestes módulos, o que facilita nosso trabalho em termos de linha de código. Não é preciso pensar em suas dimensões em termos de largura, apenas de altura visto que ele irá em cima do arduino e, usando um paquímetro, descobrimos que ele e o arduino conectados possuem 33 (trinta e três) milímetros de altura.
 
 ### Código - A programação
 ```
@@ -115,7 +113,9 @@ Aqui existe um Código
 ```
 
 ## Operação
-Indústria 4.0
+
+Pensando em nosso compartimento, medimos o comprimento e a largura do display TFT ara que seja possível cortar uma janela que permita o contato com o display e, usando um paquímetro, encontramos 60 (sessenta) milimetros de comprimento e 42 (quarenta e dois) milímetros de largura, tal como 12 (doze) milímetros de altura, que precisam de uma margem de erro visto que usaremos jumpers para afastá-lo e posicioná-lo de forma adequada no compartimento. Para a altura do compartimento,
+
 
 Operação (Blynk)
 
