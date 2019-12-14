@@ -92,7 +92,8 @@ Inicialmente estudamos cada dispositivo separadamente, entendendo seu funcioname
 
 O acesso via bluetooth exigiu a criação de um aplicativo para celulares. A abordagem escolhida para a criação do app, foi o uso da ferramenta MIT App Inventor 2. Por conta da simplicidade da ferramenta, esta etapa pode ser concluída com facilidade e rapidez e este foi o resultado:
 ### Interface do APP
-#### Tela 1                     Tela 2
-<img src="https://github.com/LPAE/pi2_eng_19_2/blob/master/Cicero_Junior_Vitor_Hugo/Img/Interface_App_1.png" width="195" height="348"/><img src="https://github.com/LPAE/pi2_eng_19_2/blob/master/Cicero_Junior_Vitor_Hugo/Img/Interface_App_2.png" width="195" height="348"/>
+#### Tela 1 | Tela 2
+|-----------|---------|
+<img src="https://github.com/LPAE/pi2_eng_19_2/blob/master/Cicero_Junior_Vitor_Hugo/Img/Interface_App_1.png" width="195" height="348"/>|<img src="https://github.com/LPAE/pi2_eng_19_2/blob/master/Cicero_Junior_Vitor_Hugo/Img/Interface_App_2.png" width="195" height="348"/>
 
 
