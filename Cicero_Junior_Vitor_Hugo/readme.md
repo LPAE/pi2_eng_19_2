@@ -19,7 +19,7 @@ Vitor Hugo Cardoso
 2. [Concepção](#Concepção)
 3. [Design](#Design)
 4. [Implementação](#Implementação)
-5. [Operacionalização](#Operacionalização)
+5. [Operação](#Operação)
 6. [Referências](#Referências)
 
 ## Introdução
