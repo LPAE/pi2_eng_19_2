@@ -87,10 +87,10 @@ Sabemos quais tecnologias vamos adotar para nosso projeto. É necessário agora 
 
 A fase de implementação é onde desenvolvemos o protótipo do projeto afim de verificar seu funcionamento na prática, utilizando das escolhas feitas nas fases anteriores como base. Assim, como já temos o hardware necessário e já verificamos como devemos integrá-los, devemos agora nos concentrar principalmente na programação e interface com o usuário. 
 
-Inicialmente estudamos cada dispositivo separadamente, entendendo seu funcionamento e programação para, posteriormente, configurá-los como uma unidade. Possibilitar o funcionamento simultâneo de todos esses elementos foi a parte mais desafiadora(?). O resultado de nosso código é este apresentado a abaixo:
+Inicialmente estudamos cada dispositivo separadamente, entendendo seu funcionamento e programação para, posteriormente, configurá-los como uma unidade. Possibilitar o funcionamento simultâneo de todos esses elementos foi a parte mais desafiadora(?). O resultado de nosso código está apresentado abaixo:
 [--------------------------]
 
-O acesso via bluetooth exigiu a criação de um aplicativo para celulares. A abordagem escolhida para a criação do app, foi o uso da ferramenta MIT App Inventor 2. Por conta da simplicidade da ferramenta, esta etapa pode ser concluída com facilidade e rapidez e este foi o resultado:
+O acesso via bluetooth exigiu a criação de um aplicativo para celulares. A abordagem escolhida para a criação do app, foi o uso da ferramenta *MIT App Inventor 2*. Por conta da simplicidade da ferramenta, esta etapa pode ser concluída com facilidade e rapidez e este foi o resultado:
 ### Interface do APP
 
 <img src="https://github.com/LPAE/pi2_eng_19_2/blob/master/Cicero_Junior_Vitor_Hugo/Img/Interface_App_1.png" width="195" height="348"/><img src="https://github.com/LPAE/pi2_eng_19_2/blob/master/Cicero_Junior_Vitor_Hugo/Img/Interface_App_2.png" width="195" height="348"/>
@@ -101,4 +101,8 @@ A programação da ferramenta App Inventor é feita por meio dos blocos apresent
 
 ![](https://github.com/LPAE/pi2_eng_19_2/blob/master/Cicero_Junior_Vitor_Hugo/Img/App_prog_block_1.JPG)
 
+O primeiro bloco é responsável pela tela de login, feita de forma bem simplificada. A ideia inicial era implementar uma ferramenta para gerar novas senhas e guardar em um banco de dados, mas não foi possível desenvolvê-la a tempo, por isso, escolhemos deixar o login e senha únicos e salvos dentro do app.
+
 ![](https://github.com/LPAE/pi2_eng_19_2/blob/master/Cicero_Junior_Vitor_Hugo/Img/App_prog_block_2.JPG)
+
+O segundo bloco lida com a conexão do bluetooth e também com a comunicação entre o celular e o arduino para requisitar o acionamento da fechadura.
