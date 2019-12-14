@@ -76,6 +76,8 @@ Sabemos quais tecnologias vamos adotar para nosso projeto. É necessário agora 
 | Radiofrequência  | RFID RDM6300 125KHz    |
 | Display          | LCD 2.4"TFT - ILI9341  |
 | Microcontrolador | Arduino Mega 2560 Rev3 |
+| Sinalização      | Buzzer 5V              |
+| Acionamento      | Relé 5V                |
 
 1. O módulo wi-fi esp8266-01 é o dispositivo ideal para o projeto, pois, sua conexão com a internet pode ser feita via wi-fi facilitando a sua instalação e portabilidade.
 
@@ -107,3 +109,7 @@ O primeiro bloco é responsável pela tela de login, feita de forma bem simplifi
 ![](https://github.com/LPAE/pi2_eng_19_2/blob/master/Cicero_Junior_Vitor_Hugo/Img/App_prog_block_2.JPG)
 
 O segundo bloco lida com a conexão do bluetooth e também com a comunicação entre o celular e o arduino para requisitar o acionamento da fechadura.
+
+## Operação
+
+Após a finalização do protótipo, criamos uma *case* capaz de comportar nosso projeto. O modelo escolhido foi uma caixa de acrílico feita sobmedida para os dispositivos utilizados no projeto. Ela possui 12cm de comprimento, 7cm de largura, 5cm de altura e conta com entrada para alimentação do arduino, entrada e saída de fios para o controle da fechadura e com um espaço específico para o display. 
