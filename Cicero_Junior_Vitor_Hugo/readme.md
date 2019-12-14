@@ -83,4 +83,12 @@ Sabemos quais tecnologias vamos adotar para nosso projeto. É necessário agora 
 
 3. Entre as opções recomendadas para o projeto, o microcontrolador Arduino Mega mostrou-se a melhor opção devido ao grande número de portas de entrada e saída.
 
+## Implementação
+
+A fase de implementação é onde desenvolvemos o protótipo do projeto afim de verificar seu funcionamento na prática, utilizando das escolhas feitas nas fases anteriores como base. Assim, como já temos o hardware necessário e já verificamos como devemos integrá-los, devemos agora nos concentrar principalmente na programação e interface com o usuário. 
+
+Inicialmente estudamos cada dispositivo separadamente, entendendo seu funcionamento e programação para, posteriormente, configurá-los como uma unidade. Possibilitar o funcionamento simultâneo de todos esses elementos foi a parte mais desafiadora(?). O resultado de nosso código é este apresentado a abaixo:
+[--------------------------]
+
+O acesso via bluetooth exigiu a criação de um aplicativo para celulares. A abordagem escolhida para a criação do app, foi o uso da ferramenta MIT App Inventor 2. Por conta da simplicidade da ferramenta, esta etapa pode ser concluída com facilidade e rapidez e este foi o resultado:
 
