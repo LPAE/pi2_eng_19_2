@@ -1231,7 +1231,7 @@ delay(1000);
 digitalWrite(pinTrava, HIGH);
 ```
 # Conclusões
-Para desenvolver esse projeto foi necessário planejamento para se desenvolver todas as competências em tempo hábil, o CDIO um modo de elaboração de projeto foi de suma importância para se separar as etapas e se obter objetivos claros para que o projeto fosse concluído com sucesso. Com o desenvolver do mesmo foi perceptível que atualmente existe muitas possibilidades de tecnologias e o que pode ser feito com elas, levando a um mundo de possibilidades e de caminhos alternativos que podem ser tomados para se realizar certos objetivos. Hoje com vontade e acesso a algumas tecnologias em casa pode ser desenvolvido um projeto altamente funcional que antes só eram possíveis as indústrias. Além de ser extremamente gratificante ver o projeto funcionando e poder pensar e ainda mais ideias para deixá lo mais funcional e melhor.  
+Para desenvolver esse projeto foi necessário planejamento para atingir todas as competências em tempo hábil, e o CDIO  foi de suma importância para separar as etapas e  obter objetivos claros para que o projeto fosse concluído com sucesso. Com o desenvolver do mesmo foi perceptível que atualmente existe muitas tecnologias e descrições sobre o que pode ser feito com elas, levando a um mundo de possibilidades e de caminhos alternativos que podem ser tomados para se realizar certos objetivos.  
 
 # Referências 
 
