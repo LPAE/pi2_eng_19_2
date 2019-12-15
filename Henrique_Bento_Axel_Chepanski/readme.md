@@ -336,7 +336,7 @@ Especificações:
 
 ## 4.9 Componentes e Conexões
 
-
+![](https://github.com/LPAE/pi2_eng_19_2/blob/master/Henrique_Bento_Axel_Chepanski/imgpi/esquematico%20final%20pi2.PNG?raw=true)
 
 O display TFT e o shield ethernet não estão presentes na ligação no esquematico porque são shields que são enxaixados na placa principal o arduino MEGA 2560.
 
