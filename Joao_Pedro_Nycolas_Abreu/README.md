@@ -1,5 +1,6 @@
 
 
+
 # Projeto Integrador 2 2019_2
 
 Instituto Federal de Educação, Ciência e Tecnologia de Santa Catarina - Campus Florianópolis Departamento Acadêmico de Eletrônica Curso de Engenharia Eletrônica
@@ -92,5 +93,13 @@ Esse display LCD tem 16 colunas e 2 linhas, com backlight (luz de fundo) azul e 
 Será utilizado para informar se a senha ou RFID foram aceitos pelo programa, emitindo uma frase de "Bem vindo" no caso de acesso permitido, e uma frase "Tente novamente" no caso de acesso negado.
 
 ### Ativação do dispositivo
+A ativação do dispositivo será feita por um circuito de controle contendo um opto acoplador e um transistor de efeito de campo. A escolha deste circuito nos permitiu separar o Arduíno da tensão mais elevada que a porta necessita, adicionando um fator de proteção a mais para o dispositivo.
+Também foi desenvolvida uma fonte de 12V 1A para alimentar a porta, sendo assim pudemos simular o projeto sem depender de fontes de bancada.
 ## DESIGN
-![enter image description here](https://i.screenshot.net/45lmwiy)
+![enter image description here](https://i.ibb.co/Z2MHhwb/0001.jpg)
+## IMPLEMENTAÇÃO
+Após os testes em bancada foi feito um protótipo para organizar o projeto em um único espaço.
+![enter image description here](https://i.ibb.co/h7bD8k4/Whats-App-Image-2019-12-13-at-16-23-15.jpg)
+![enter image description here](https://i.ibb.co/j8T9ssW/Whats-App-Image-2019-12-13-at-16-23-15-1.jpg)
+## CONCLUSÃO
+Mesmo com algumas dificuldades em compatibilidade de códigos, e falta de experiencia com os componentes utilizados, foi possível efetuar o projeto de maneira satisfatória, e concluindo os objetivos principais propostos em sala.
