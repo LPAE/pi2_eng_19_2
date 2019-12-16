@@ -58,9 +58,11 @@ Acesso Remoto | Módulo Bluetooth | 1
 
 ## Implementação
 
-O design do projeto nos possibilitou uma ideia mais nítida do projeto final em termos de conexão e dimensão do mesmo. Para nos auxiliar na hora 
+O design do projeto nos possibilitou uma ideia mais nítida do projeto final em termos de conexão e dimensão do mesmo. Para nos auxiliar na montagem do projeto, desenvolvemos um esquemático usando o software Fritzing, apresentando a ligação de cada parte do circuito.
 
-Para que seja possível implementar estas tecnologias com o arduino e usá-las para este projeto, devemos entender o funcionamento de nossos componentes e aprender a programá-los.
+![Esquem](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/Esquemático.PNG)
+
+Mas para que seja possível implementar estas tecnologias com o arduino e usá-las para este projeto, devemos entender o funcionamento de nossos componentes e aprender a programá-los.
 
 ### Buzzer - Sinalização
 
@@ -101,6 +103,18 @@ O ILI9341 é um display pixels TFT (transístor de película fina) LCD (display 
 ![W5100](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/ETHERNET.jpg)
 
 Este shield permite que o arduino se conecte via internet, fornecendo acesso à rede (IP) nos protocolos TCP ou UDP. Foi projetado para ser compatível em pinos com as versões mais tradicionais de arduino, incluindo o arduino MEGA que é o que nos interessa. Para programá-lo, diversos sites e softwares oferecem aplicativos já feitos pensando nestes módulos, o que facilita nosso trabalho em termos de linha de código. Não é preciso pensar em suas dimensões em termos de largura, apenas de altura visto que ele irá em cima do arduino e, usando um paquímetro, descobrimos que ele e o arduino conectados possuem 33 (trinta e três) milímetros de altura.
+
+### IRF540 - MOSFET
+
+![IRF540](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/IRF540.jpg)
+
+Este Transistor possui diversas possibilidades de aplicação. Em nosso caso, utilizaremos ele como uma chave que, ao receber uma certa tensão, libera o circuito da fechadura, possibilitando que a corrente que precisamos percorra a bobina. 
+
+### 1N4007 - Diodo
+
+![diodo](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/diodo.jpg)
+
+Este componente aparece em inúmeras aplicações no mundo da eletrônica, ele permite a passagem de corrente apenas em um sentido. Um exemplo de uso que podemos ter é o diodo como meio de proteção em casos onde não podemos ter uma corrente inversa circulando pelo nosso circuito.
 
 ### Código - A programação
 
@@ -400,14 +414,11 @@ long hexstr_to_value(char *str, unsigned int length) { // converts a hexadecimal
 
 ## Operação
 
-Para que não seja preciso uma protoboard para as conexões que se tornariam frágeis e não duradouras, desenvolvemos uma placa para o projeto, seguindo o esquemática apresentado anteriormente. A primeira ideia surgiu como sendo uma PCB simples com seu esquemático criado pelo software KiCad.
-
-![Esquemático](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/Esquem%C3%A1tico.PNG)
+Para que não seja preciso uma protoboard para as conexões que se tornariam frágeis e não duradouras, desenvolvemos uma placa para o projeto, seguindo o esquemática apresentado anteriormente. A primeira ideia surgiu como sendo uma PCB simples com seu esquemático criado pelo software KiCad. 
 
 Após a impressão e corrosão da PCB, observamos que as trilhas precisariam ser muito mais grossas devido à alta corrente da fechadura que passaria por ela, então abandonamos o esquemático inicial e optamos por produzir a placa usando uma placa universal, que se mostrou mais fácil em questão de organização já que contém o espaço entre-pinos ideal para o nosso trabalho. 
 
 ![PCB](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/PCB.jpg)
-![Esquem](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/Esquemático.PNG)
 
 Pensando em nosso compartimento, medimos o comprimento e a largura do display TFT ara que seja possível cortar uma janela que permita o contato com o display e, usando um paquímetro, encontramos 60 (sessenta) milimetros de comprimento e 42 (quarenta e dois) milímetros de largura, tal como 12 (doze) milímetros de altura, que precisam de uma margem de erro visto que usaremos jumpers para afastá-lo e posicioná-lo de forma adequada no compartimento. Para a altura do compartimento,foi preciso medir a maior altura possível que é a do módulo bluetooth visto que ele permanece de pé na placa.
 
