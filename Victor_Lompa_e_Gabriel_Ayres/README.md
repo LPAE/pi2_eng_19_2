@@ -445,3 +445,7 @@ Módulo RFID: https://www.mschoeffler.de/2018/01/05/arduino-tutorial-how-to-use-
 
 Octoacoplador: http://www.vishay.com/docs/83725/4n25.pdf
 
+Diodo: https://www.diodes.com/assets/Datasheets/ds28002.pdf
+
+Transistor: https://www.vishay.com/docs/91021/91021.pdf
+
