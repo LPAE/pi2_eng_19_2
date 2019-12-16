@@ -405,13 +405,15 @@ long hexstr_to_value(char *str, unsigned int length) { // converts a hexadecimal
 
 Pensando em nosso compartimento, medimos o comprimento e a largura do display TFT ara que seja possível cortar uma janela que permita o contato com o display e, usando um paquímetro, encontramos 60 (sessenta) milimetros de comprimento e 42 (quarenta e dois) milímetros de largura, tal como 12 (doze) milímetros de altura, que precisam de uma margem de erro visto que usaremos jumpers para afastá-lo e posicioná-lo de forma adequada no compartimento. Para a altura do compartimento,foi preciso medir a maior altura possível que é a do módulo bluetooth visto que ele permanece de pé na placa.
 
-Para a modelagem da peça que porteriormente formaria nosso compartimento, contamos com a ajuda de monitores do curso de Design de Produtos do Instituto Federal de Santa Catarina. Dadas as medidas, obtivemos um modelo planificado da estrutura do compartimento que foi colado em um material similar ao papelão porém mais resistente e cortado.
-
 ![peça](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/peça.PNG)
 
-Após o corte, a peça foi lixada para um melhor acabamento e pintada com tinta preta.
+Para a modelagem da peça que porteriormente formaria nosso compartimento, contamos com a ajuda de monitores do curso de Design de Produtos do Instituto Federal de Santa Catarina. Dadas as medidas, obtivemos um modelo planificado da estrutura do compartimento que foi colado em um material similar ao papelão porém mais resistente e cortado.
 
 ![peça2](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/peça2.PNG)
+
+Após o corte, a peça foi lixada para um melhor acabamento e pintada com tinta preta. Alguns ajustes foram necesários em questão de imprecisão no corte, para isso, usamos estilete e alicate de corte, lixando e pintando novamente com tinta preta.
+
+![peça3](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/peça3.PNG)
 
 ## Referências bibliográficas
 Indústria 4.0: https://www.youtube.com/watch?v=ISk64bJ35yM&feature=emb_title
