@@ -53,31 +53,12 @@ O primeiro obstáculo encontrado para fazer a fechadura funcionar, é a constru�
 
 As soluções para destrancar a fechadura encontradas foram:
 - Teclado matricial;
-    - A função do teclado no projeto é possibilitar que o usuário implemente uma senha, troque a senha, e destranque a fechadura entrando com a senha correta. 
-        - OBS: Por medidas de segurança, somente será possível trocar a senha se o usuário entrar com a senha correta atual.
+    - A função do teclado no projeto é possibilitar que o usuário destranque a fechadura entrando com a senha correta. 
 - Técnologia RFID (Identificação por Radiofrequência);
     - O RFID no projeto facilitará ao usuário destrancar a fechadura através da leitura de um chip que poderá estar, por exemplo, num cartão.
 - App de celular.
     - O aplicativo para smartphones é acrescentado ao projeto a fim de modernizar sutilmente, afinal, atualmente, quando o celular é uma opção de usar como recurso, facilita ao usuário.
-        - A comunicação entre o app mobile e o circuito é realizada através de módulos bluetooth e wi-fi.
-
-Recursos Visuais:
-- LEDs que informem se a fechadura está trancada ou destrancada.
-- Display:
-    - mostrar ocultamente passo a passo da senha digitada;
-    - Informar:
-        - Senha *CORRETA* ou *INCORRETA*;
-        - Fechadura *ABERTA* ou *FECHADA*.
-
-Recurso Auditivo:
-- Buzzer que emitirá som quando:
-    - Tecla do teclado matricial for pressionada;
-        - informando ao usuário que um digito foi selecionado.
-    - Fechadura abrir ou fechar;
-        - informando ao usuário que a fechadura mudou de estado.
-
-
-Para medidas de segurança do cliente é implementado um alarme.
+        - A comunicação entre o app mobile e o circuito é realizada através de módulos bluetooth.
 
 O Arduino comandará todos os processos e será responsável de enviar e receber informações da fechadura.
 
@@ -142,13 +123,17 @@ Especificações:
 
 O módulo BT RS232 HC-05 é um método de comunicação com o Arduino fácil e barato, e é facilmente configurável.
 
-
-### ETHERNET SHIELD W5100
-O shield quando encaixado na placa, basta apenas plugar na rede para tornar o arduino online, também possuí um slot para cartão micro-SD para armazenar arquivos, útil para guardar informações caso a esteja sem rede ethernet.
-
-### DISPLAY GRÁFICO 2.4 "TFT - ILI9341
-![Planta_eletronica](https://user-images.githubusercontent.com/50679263/70916234-156d6f80-1ffa-11ea-9290-ce55263279b3.jpg)
 ### PLANTA
+![Planta_eletronica](https://user-images.githubusercontent.com/50679263/70916234-156d6f80-1ffa-11ea-9290-ce55263279b3.jpg)
 ## 5. Implemetação
+
 ## 6. Operação
+
 ## 7. Referências
+https://ajuda.eagletecnologia.com/manuais/base-de-conhecimento/sintaxe-markdown
+https://guides.github.com/features/mastering-markdown/
+https://www.arduinolibraries.info/libraries/keypad
+https://arbitraryuser.com/2013/04/16/rdm630-125khz-rfid-reading-with-the-arduino-mega-2560-r3/
+https://www.smartkits.com.br/pd-36e20f-teclado-matricial-de-membrana-16-teclas.html
+https://www.sotudo.com.br/produto/modulo-leitor-rfid-rdm6300-125khz
+https://www.filipeflop.com/blog/tutorial-arduino-bluetooth-hc-05-mestre/
