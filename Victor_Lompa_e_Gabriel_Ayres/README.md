@@ -407,11 +407,11 @@ Pensando em nosso compartimento, medimos o comprimento e a largura do display TF
 
 Para a modelagem da peça que porteriormente formaria nosso compartimento, contamos com a ajuda de monitores do curso de Design de Produtos do Instituto Federal de Santa Catarina. Dadas as medidas, obtivemos um modelo planificado da estrutura do compartimento que foi colado em um material similar ao papelão porém mais resistente e cortado.
 
-![peça](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/peça.png)
+![peça](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/peça.PNG)
 
 Após o corte, a peça foi lixada para um melhor acabamento e pintada com tinta preta.
 
-![peça2](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/peça2.png)
+![peça2](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/peça2.PNG)
 
 ## Referências bibliográficas
 Indústria 4.0: https://www.youtube.com/watch?v=ISk64bJ35yM&feature=emb_title
