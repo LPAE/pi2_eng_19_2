@@ -126,11 +126,13 @@ O módulo BT RS232 HC-05 é um método de comunicação com o Arduino fácil e b
 ### PLANTA
 ![Planta_eletronica](https://user-images.githubusercontent.com/50679263/70916234-156d6f80-1ffa-11ea-9290-ce55263279b3.jpg)
 ## 5. Implemetação
-
 https://github.com/LPAE/pi2_eng_19_2/blob/master/Gabriel_Romero_Jean_Eifler/PI_GABRIEL_JEAN.ino
-
-
 ## 6. Operação
+
+A fechadura pode ser aberta por 3 vias diferentes:
+Bluetooth: o usuário precisa baixar o aplicativo, criar um login e com isso é liberado o acesso a fechadura.
+RFID: é necessário o uso de uma tag exclusiva para dado leitor, esta tag quando aproximada da lateral do projeto, faz a fechadura abrir.
+Teclado: quando digitada a senha correta a porta é liberada. Neste projeto criou-se uma senha aleatoria de 6 digitos 159875.
 
 ## 7. Referências
 https://ajuda.eagletecnologia.com/manuais/base-de-conhecimento/sintaxe-markdown
