@@ -40,15 +40,9 @@ Em parceria com a unidade curricular de Eletrônica 1 foram desenvolvidos circui
 
 O shield ethernet foi projetado para que pudesse ser conectado diretamente em cima do arduino portanto, na tentantiva de não tornar o projeto muito grande, montamos um esquemático que pudesse encaixar no espaço que não foi ultilizado pelo W5100 e assim aproveitar e planejar melhor o espaço e os pinos do arduino que temos disponível.
 
-![Esquemático](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/Esquem%C3%A1tico.PNG)
-
-Após a impressão e corrosão da PCB, observamos que as trilhas precisariam ser muito mais grossas devido à alta corrente da fechadura que passaria por ela, então abandonamos o esquemático inicial e optamos por produzir a placa usando uma placa universal, que se mostrou mais fácil em questão de organização já que contém o espaço entre-pinos ideal para o nosso trabalho. 
-
-![PCB](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/PCB.jpg)
-
 O display TFT, assim como o shield ethernet, foi projetado para se encaixar diretamente em cima do arduino e, no nosso caso, ele poderia ser encaixado em cima do ethernet pois usa os mesmo pinos porém, pensando no resultado final, analisamos a possibilidade de ultilizar jumpers para afastar o LCD do arduino e incliná-lo a uma angulação boa para que o usuário final possa digitar a senha de forma mais agradável.
 
-Para armazenar e proteger todos os dispositivos e ligações elétricas e eletrônicas, pensamos em um compartimento...
+Para armazenar e proteger todos os dispositivos e ligações elétricas e eletrônicas, desenvolvemos um compartimento com as medidas dos componentes do projeto. Assim, o projeto se torna de facil transporte e de maior segurança.
 
 Em resumo, tudo que precisamos pode ser listado em uma tabela simples que vincula o objetivo a ser alcançado com a tecnologia implementada.
 
@@ -63,6 +57,9 @@ Controle | Arduino Mega 2560 | 1
 Acesso Remoto | Módulo Bluetooth | 1
 
 ## Implementação
+
+O design do projeto nos possibilitou uma ideia mais nítida do projeto final em termos de conexão e dimensão do mesmo. Para nos auxiliar na hora 
+
 Para que seja possível implementar estas tecnologias com o arduino e usá-las para este projeto, devemos entender o funcionamento de nossos componentes e aprender a programá-los.
 
 ### Buzzer - Sinalização
@@ -403,6 +400,15 @@ long hexstr_to_value(char *str, unsigned int length) { // converts a hexadecimal
 
 ## Operação
 
+Para que não seja preciso uma protoboard para as conexões que se tornariam frágeis e não duradouras, desenvolvemos uma placa para o projeto, seguindo o esquemática apresentado anteriormente. A primeira ideia surgiu como sendo uma PCB simples com seu esquemático criado pelo software KiCad.
+
+![Esquemático](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/Esquem%C3%A1tico.PNG)
+
+Após a impressão e corrosão da PCB, observamos que as trilhas precisariam ser muito mais grossas devido à alta corrente da fechadura que passaria por ela, então abandonamos o esquemático inicial e optamos por produzir a placa usando uma placa universal, que se mostrou mais fácil em questão de organização já que contém o espaço entre-pinos ideal para o nosso trabalho. 
+
+![PCB](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/PCB.jpg)
+![Esquem](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/Esquemático.PNG)
+
 Pensando em nosso compartimento, medimos o comprimento e a largura do display TFT ara que seja possível cortar uma janela que permita o contato com o display e, usando um paquímetro, encontramos 60 (sessenta) milimetros de comprimento e 42 (quarenta e dois) milímetros de largura, tal como 12 (doze) milímetros de altura, que precisam de uma margem de erro visto que usaremos jumpers para afastá-lo e posicioná-lo de forma adequada no compartimento. Para a altura do compartimento,foi preciso medir a maior altura possível que é a do módulo bluetooth visto que ele permanece de pé na placa.
 
 ![peça](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/peça.PNG)
@@ -413,9 +419,11 @@ Para a modelagem da peça que porteriormente formaria nosso compartimento, conta
 
 Após o corte, a peça foi lixada para um melhor acabamento e pintada com tinta preta. As partes que precisariam ser dobradas foram desgastadas com estilete e levemente umidecidas para facilitar a operação, evitando tensionar muito o materia. Alguns ajustes foram necesários em questão de imprecisão no corte, para isso, usamos estilete e alicate de corte, lixando e pintando novamente com tinta preta. Por fim, o compartimento foi selado com cola quente.
 
-![peça3](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/peça3.jpeg)
+![peça4](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/peça4.jpeg)
 
-## Referências bibliográficas
+O código por trás do arduino foi criado com base em diversas referências citadas e em códigos de exemplo que são instalados junto às bibliotecas de cada componente.
+
+## Referências
 Indústria 4.0: https://www.youtube.com/watch?v=ISk64bJ35yM&feature=emb_title
 
 Shield Ethernet: https://www.baudaeletronica.com.br/ethernet-shield-w5100-para-arduino.html
