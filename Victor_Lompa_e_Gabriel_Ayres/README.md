@@ -411,9 +411,9 @@ Para a modelagem da peça que porteriormente formaria nosso compartimento, conta
 
 ![peça2](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/peça2.jpeg)
 
-Após o corte, a peça foi lixada para um melhor acabamento e pintada com tinta preta. Alguns ajustes foram necesários em questão de imprecisão no corte, para isso, usamos estilete e alicate de corte, lixando e pintando novamente com tinta preta.
+Após o corte, a peça foi lixada para um melhor acabamento e pintada com tinta preta. As partes que precisariam ser dobradas foram desgastadas com estilete e levemente umidecidas para facilitar a operação, evitando tensionar muito o materia. Alguns ajustes foram necesários em questão de imprecisão no corte, para isso, usamos estilete e alicate de corte, lixando e pintando novamente com tinta preta. Por fim, o compartimento foi selado com cola quente.
 
-![peça3](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/peça3.PNG)
+![peça3](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/peça3.jpeg)
 
 ## Referências bibliográficas
 Indústria 4.0: https://www.youtube.com/watch?v=ISk64bJ35yM&feature=emb_title
