@@ -22,8 +22,7 @@ Alunos:
 
 O termo indústria 4.0 é de origem alemã e remete à chamada quarta revolução industrial. É caracterizada por novas tecnologias do mundo digital, que incrementam a digitalização já presente na indústria e têm o potencial de redefini-la. Ela representa uma mudança na maneira de viver, trabalhar e se relacionar, visando um maior alcance, rapidez e impacto. Leva o nome de quarta revolução visto que se encaminha para a automação total das indústrias.
 
-O progresso em relação à última revolução industrial é definido pelas àreas da informação e computação. Um fator diferencial para as duas é o atual poder nos sistemas embarcados, que torna realidade o conceitos como a Internet das Coisas. Diante disso novas promessas de mercado surgem, resultando no crescimento de algunas indústrias enquanto outras tendem à 
-obsolescência. 
+O progresso em relação à última revolução industrial é definido pelas àreas da informação e computação. Um fator diferencial para as duas é o atual poder nos sistemas embarcados, que torna realidade o conceitos como a Internet das Coisas. Diante disso novas promessas de mercado surgem, resultando no crescimento de algunas indústrias enquanto outras tendem à obsolescência. 
 
 Neste contexto de automação, buscar e implementar tecnologias que facilitem e agilizem tarefas pode ser fundamental para acompanhar as mudanças nos paradigmas tecnológicos. Pensando nisso, nosso projeto tem como objetivos integrar os conhecimentos adquiridos durante o curso com a industria 4.0. Para alcançar esses objetivos o projeto foi definido como o desenvolvimento de uma fechadura eletrônica e a implementação de diferentes tecnologias.
 
@@ -60,9 +59,8 @@ Acesso Rápido | Sensor RFID | 1
 Acesso com senha | Display TFT | 1 
 Interface | Display TFT | 1
 Sinalização | Buzzer | 1
-Comando | Arduino Mega 2560 | 1
--- | Módulo Bluetooth | 1
--- | Ethernet | 1
+Controle | Arduino Mega 2560 | 1
+Acesso Remoto | Módulo Bluetooth | 1
 
 ## Implementação
 Para que seja possível implementar estas tecnologias com o arduino e usá-las para este projeto, devemos entender o funcionamento de nossos componentes e aprender a programá-los.
@@ -108,35 +106,321 @@ O ILI9341 é um display pixels TFT (transístor de película fina) LCD (display 
 Este shield permite que o arduino se conecte via internet, fornecendo acesso à rede (IP) nos protocolos TCP ou UDP. Foi projetado para ser compatível em pinos com as versões mais tradicionais de arduino, incluindo o arduino MEGA que é o que nos interessa. Para programá-lo, diversos sites e softwares oferecem aplicativos já feitos pensando nestes módulos, o que facilita nosso trabalho em termos de linha de código. Não é preciso pensar em suas dimensões em termos de largura, apenas de altura visto que ele irá em cima do arduino e, usando um paquímetro, descobrimos que ele e o arduino conectados possuem 33 (trinta e três) milímetros de altura.
 
 ### Código - A programação
+
+O código abaixo foi utilizado para o funcionamento de todos os módulos de nosso projeto. Dentro do código, alguns comentários descrevem o funcionameto do mesmo para auxiliar o leitor.
+
 ```
-Aqui existe um Código
+#include "Adafruit_GFX.h"
+#include <SoftwareSerial.h>
+#include <MCUFRIEND_kbv.h>
+MCUFRIEND_kbv tft;
+#include <TouchScreen.h>
+int tecla;
+char valorb;
+int dig=0;
+String tentativa;
+String senha= String(44);
+const int XP=6, XM=A2, YP=A1,YM=7;
+const int TS_LEFT=907,TS_RT=136,TS_TOP=942,TS_BOT=139;
+TouchScreen ts = TouchScreen(XP, YP, XM, YM, 300);
+TSPoint tp;
+boolean call = false;
+#define MINPRESSURE 410
+#define MAXPRESSURE 1200
+#define PRETO       0x0000
+#define AZUL        0x001F
+#define VERMELHO    0xF800
+#define VERDE       0x07E0
+#define CIANO       0x07FF
+#define MAGENTA     0xF81F
+#define AMARELO     0xFFE0
+#define BRANCO      0xFFFF
+// display is 240x320 pixels
+//RDM6300
+const int BUFFER_SIZE = 14; // RFID DATA FRAME FORMAT: 1byte head (value: 2), 10byte data (2byte version + 8byte tag), 2byte checksum, 1byte tail (value: 3)
+const int DATA_SIZE = 10; // 10byte data (2byte version + 8byte tag)
+const int DATA_VERSION_SIZE = 2; // 2byte version (actual meaning of these two bytes may vary)
+const int DATA_TAG_SIZE = 8; // 8byte tag
+const int CHECKSUM_SIZE = 2; // 2byte checksum
+SoftwareSerial ssrfid = SoftwareSerial(A12,A15); 
+SoftwareSerial blue = SoftwareSerial(A13,A14);
+uint8_t buffer[BUFFER_SIZE]; // used to store an incoming data frame 
+int buffer_index = 0;
+//
+
+void abre(){ 
+  pinMode(36,OUTPUT); // Esta função abre a porta (aciona o 4N25) e aciona o buzzer
+  pinMode(42,OUTPUT);
+  digitalWrite(36, HIGH);
+  digitalWrite(42, HIGH);
+  delay(30);
+  digitalWrite(36, LOW);
+  delay(1000);
+  digitalWrite(42, LOW);
+}
+
+void setup (){
+  uint16_t ID = tft.readID(); // Leitura do código de identificação do controlador
+  tft.begin(ID); // Inicialização da tela
+  homepage(); // Chamada da função responsável por renderizar o nosso painel de acesso 
+  Serial.begin(9600); 
+ ssrfid.begin(9600);
+ blue.begin(9600);
+ blue.listen();
+}
+void homepage() {
+  tft.setRotation(1);
+  tft.fillScreen(PRETO);
+  tft.setCursor(132, 10);
+  tft.setTextColor(VERDE);
+  tft.setTextSize(3);
+  tft.print("LPAE");
+  tft.setCursor(21,35);
+  tft.setTextColor(VERDE);
+  tft.setTextSize(2);
+  tft.print("Laboratorio de Pesquisa");
+  tft.setCursor(25,55);
+  tft.setTextColor(VERDE);
+  tft.setTextSize(2);
+  tft.print("Avancada em Eletronica");
+  //tft.fillRect(140,100,45,45,VERMELHO); Usados para o teste do touch, explicado em void loop
+  //tft.fillRect(185,100,45,45,VERDE);
+  tft.setCursor(60,140);
+  tft.setTextColor(AMARELO);
+  tft.setTextSize(2);
+  tft.print("Toque para digitar");
+  tft.setCursor(125,165);
+  tft.setTextColor(AMARELO);
+  tft.setTextSize(2);
+  tft.print("a senha");
+  call=false;
+  
+}
+
+/*void loop() //Esse é o loop de teste para o touch
+{             //Para usá-lo, descomentar as duas linhas comentadas em homepage                   
+  uint16_t xpos, ypos;  //screen coordinates
+  tp = ts.getPoint();   //tp.x, tp.y are ADC values
+
+  pinMode(XM, OUTPUT);
+  pinMode(YP, OUTPUT);
+  if (tp.z > MINPRESSURE && tp.z < MAXPRESSURE) {
+  if ((tp.y>440 && tp.y<600) && (tp.x>440 && tp.x<600)){
+      tft.fillScreen(VERMELHO);
+  }else if ((tp.y>600 && tp.y<750) && (tp.x>440 && tp.x<600)) { 
+      tft.fillScreen(VERDE);
+  }else if ((tp.y>440 && tp.y<600) && (tp.x>280 && tp.x<430)){
+      homepage();
+  }
+  }
+}*/
+void teclado(){
+  call = true;
+  tft.setRotation(1);
+  tft.fillScreen(PRETO);
+  tft.drawRect(30,16,260,45,BRANCO);
+  tft.fillRect(80,70,40,40,VERMELHO);
+  tft.fillRect(80,125,40,40,VERMELHO); 
+  tft.fillRect(80,180,40,40,VERMELHO);
+  tft.fillRect(140,70,40,40,VERMELHO);
+  tft.fillRect(140,125,40,40,VERMELHO);
+  tft.fillRect(140,180,40,40,VERMELHO);
+  tft.fillRect(200,70,40,40,VERMELHO);
+  tft.fillRect(200,125,40,40,VERMELHO);
+  tft.fillRect(200,180,40,40,VERMELHO);
+  tft.drawCircle(45,90,15,BRANCO);
+  tft.drawCircle(275,90,15,BRANCO);
+  tft.drawLine(267,82,283,98,VERMELHO);
+  tft.drawLine(267,98,283,82,VERMELHO);
+  tft.drawCircle(45,145,15,BRANCO);
+  tft.setTextSize(4);
+  tft.setTextColor(BRANCO);
+  tft.setCursor(90,75);
+  tft.print("1");
+  tft.setCursor(150,75);
+  tft.print("2");
+  tft.setCursor(210,75);
+  tft.print("3");
+  tft.setCursor(90,130);
+  tft.print("4");
+  tft.setCursor(150,130);
+  tft.print("5");
+  tft.setCursor(210,130);
+  tft.print("6");
+  tft.setCursor(90,185);
+  tft.print("7");
+  tft.setCursor(150,185);
+  tft.print("8");
+  tft.setCursor(210,185);
+  tft.print("9");
+  
+}
+void boasvindas ()
+{ 
+  pinMode(53, OUTPUT);
+  tft.setRotation(1);
+  tft.fillScreen(PRETO);
+  tft.setCursor(25,75);
+  tft.setTextColor(VERDE);
+  tft.setTextSize(4);
+  tft.print("Boas-vindas");
+  tft.setCursor(75,107);
+  tft.print("ao LPAE");
+  abre();
+  delay(5000);
+  homepage();
+}
+void loop(){
+  valorb = blue.read();
+  if(valorb == 'X'){
+    boasvindas();
+  }
+  uint16_t xpos, ypos;  //screen coordinates
+  tp = ts.getPoint();   //tp.x, tp.y are ADC values
+
+  pinMode(XM, OUTPUT);
+  pinMode(YP, OUTPUT);
+  if ((tp.z > MINPRESSURE && tp.z < MAXPRESSURE) && call==false) {
+  if ((tp.y>200 && tp.y<800) && (tp.x>280 && tp.x<430)){
+      teclado();
+  }
+  }
+  // COLUNAS (limites y) 320 420    477 575  620 700       755 795
+  // LINHAS  (limites x) 600 700   430 540   245 340
+  if ((tp.z > MINPRESSURE && tp.z < MAXPRESSURE) && call==true) {
+  if (tp.x<700 && tp.x>600){
+    if(tp.y<420 && tp.y>320){
+      tecla = 1;
+    }else if(tp.y<575 && tp.y>477){
+      tecla = 2;
+    }else if(tp.y<700 && tp.y>620){
+      tecla = 3;
+    }else if(tp.y<835 && tp.y>795){
+      tecla=10;
+      dig =5;
+    }
+  }else if (tp.x<540 && tp.x>430){
+    if(tp.y<420 && tp.y>320){
+      tecla = 4;
+    }else if(tp.y<575 && tp.y>477){
+      tecla = 5;
+    }else if(tp.y<700 && tp.y>620){
+      tecla = 6;
+    }
+  }else if (tp.x<340 && tp.x>245){
+    if(tp.y<420 && tp.y>320){
+      tecla = 7;
+    }else if(tp.y<575 && tp.y>477){
+      tecla = 8;
+    }else if(tp.y<700 && tp.y>620){
+      tecla = 9;
+    }
+  }
+  }
+   if ((tp.z > MINPRESSURE && tp.z < MAXPRESSURE) && (call==true && tecla>0)) { 
+   tft.setCursor(32+23*dig,18);
+   tft.setTextSize(4);
+   tft.setTextColor(BRANCO);
+   if(tecla<10){
+   tft.print("#");
+   }
+   //tft.print(String(tecla)); // Printa as teclas, usado para teste do touch 
+   tentativa=tentativa + String(tecla);
+   dig=dig+1;
+   if(dig==6){
+    if(tentativa == senha){
+    tft.fillCircle(45,90,14,VERDE);
+    pinMode(52,OUTPUT);
+    digitalWrite(52,HIGH);
+    delay(1000);
+    digitalWrite(52,LOW);
+    dig=0;
+    boasvindas();
+   }else {
+    tft.fillCircle(45,145,14,VERMELHO);
+    delay(1000);
+    tft.fillCircle(45,145,14,PRETO);
+    tft.fillRect(32,18,254,40,PRETO);
+    tft.setCursor(32,18);
+    dig=0;
+   }tentativa= '\0';
+   }
+   
+   delay(300);
+   tecla=0;
+  }                                              // Fim do código do display, começo do código do RFID
+   if (ssrfid.available() > 0){
+    bool call_extract_tag = false;
+    
+    int ssvalue = ssrfid.read(); // read 
+    if (ssvalue == -1) { // no data was read
+      return;
+    }
+    if (ssvalue == 2) { // RDM630/RDM6300 found a tag => tag incoming 
+      buffer_index = 0;
+      pinMode(52,OUTPUT);
+      digitalWrite(52,HIGH);
+      delay(100);
+      digitalWrite(52,LOW);
+      boasvindas();
+    } else if (ssvalue == 3) { // tag has been fully transmitted       
+      call_extract_tag = true; // extract tag at the end of the function call
+    }
+    if (buffer_index >= BUFFER_SIZE) { // checking for a buffer overflow (It's very unlikely that an buffer overflow comes up!)
+      Serial.println("Error: Buffer overflow detected!");
+      return;
+    }
+    
+    buffer[buffer_index++] = ssvalue; // everything is alright => copy current value to buffer
+    if (call_extract_tag == true) {
+      if (buffer_index == BUFFER_SIZE) {
+        unsigned tag = extract_tag();
+      } else { // something is wrong... start again looking for preamble (value: 2)
+        buffer_index = 0;
+        return;
+      }
+    }    
+  }    
+}
+unsigned extract_tag() {
+    uint8_t msg_head = buffer[0];
+    uint8_t *msg_data = buffer + 1; // 10 byte => data contains 2byte version + 8byte tag
+    uint8_t *msg_data_version = msg_data;
+    uint8_t *msg_data_tag = msg_data + 2;
+    uint8_t *msg_checksum = buffer + 11; // 2 byte
+    uint8_t msg_tail = buffer[13];
+}
+long hexstr_to_value(char *str, unsigned int length) { // converts a hexadecimal value (encoded as ASCII string) to a numeric value
+  char* copy = malloc((sizeof(char) * length) + 1); 
+  memcpy(copy, str, sizeof(char) * length);
+  copy[length] = '\0'; 
+  // the variable "copy" is a copy of the parameter "str". "copy" has an additional '\0' element to make sure that "str" is null-terminated.
+  long value = strtol(copy, NULL, 16);  // strtol converts a null-terminated string to a long value
+  free(copy); // clean up 
+  return value;
+}
 ```
 
 ## Operação
 
-Pensando em nosso compartimento, medimos o comprimento e a largura do display TFT ara que seja possível cortar uma janela que permita o contato com o display e, usando um paquímetro, encontramos 60 (sessenta) milimetros de comprimento e 42 (quarenta e dois) milímetros de largura, tal como 12 (doze) milímetros de altura, que precisam de uma margem de erro visto que usaremos jumpers para afastá-lo e posicioná-lo de forma adequada no compartimento. Para a altura do compartimento,
+Pensando em nosso compartimento, medimos o comprimento e a largura do display TFT ara que seja possível cortar uma janela que permita o contato com o display e, usando um paquímetro, encontramos 60 (sessenta) milimetros de comprimento e 42 (quarenta e dois) milímetros de largura, tal como 12 (doze) milímetros de altura, que precisam de uma margem de erro visto que usaremos jumpers para afastá-lo e posicioná-lo de forma adequada no compartimento. Para a altura do compartimento,foi preciso medir a maior altura possível que é a do módulo bluetooth visto que ele permanece de pé na placa.
 
+Para a modelagem da peça que porteriormente formaria nosso compartimento, contamos com a ajuda de monitores do curso de Design de Produtos do Instituto Federal de Santa Catarina. Dadas as medidas, obtivemos um modelo planificado da estrutura do compartimento que foi colado em um material similar ao papelão porém mais resistente e cortado.
 
-Operação (Blynk)
+![peça](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/peça.png)
 
-Terminar Design
+Após o corte, a peça foi lixada para um melhor acabamento e pintada com tinta preta.
 
-Terminar TFT
-
-Adicionar Código
-
-Adicionar todas as referências
+![peça2](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/peça2.png)
 
 ## Referências bibliográficas
-Indústria 4.0: 
+Indústria 4.0: https://www.youtube.com/watch?v=ISk64bJ35yM&feature=emb_title
 
 Shield Ethernet: https://www.baudaeletronica.com.br/ethernet-shield-w5100-para-arduino.html
 
-Módulo Bluetooth:
+Módulo Bluetooth: https://www.filipeflop.com/blog/tutorial-arduino-bluetooth-hc-05-mestre/
 
 Módulo RFID: https://www.mschoeffler.de/2018/01/05/arduino-tutorial-how-to-use-the-rdm630-rdm6300-rfid-reader/
-
-Display TFT:
 
 Octoacoplador: http://www.vishay.com/docs/83725/4n25.pdf
 
