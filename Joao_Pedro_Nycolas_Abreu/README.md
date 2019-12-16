@@ -99,7 +99,9 @@ Também foi desenvolvida uma fonte de 12V 1A para alimentar a porta, sendo assim
 ![enter image description here](https://i.ibb.co/Z2MHhwb/0001.jpg)
 ## IMPLEMENTAÇÃO
 Após os testes em bancada foi feito um protótipo para organizar o projeto em um único espaço.
+
 ![enter image description here](https://i.ibb.co/h7bD8k4/Whats-App-Image-2019-12-13-at-16-23-15.jpg)
+
 ![enter image description here](https://i.ibb.co/j8T9ssW/Whats-App-Image-2019-12-13-at-16-23-15-1.jpg)
 ## CONCLUSÃO
 Mesmo com algumas dificuldades em compatibilidade de códigos, e falta de experiencia com os componentes utilizados, foi possível efetuar o projeto de maneira satisfatória, e concluindo os objetivos principais propostos em sala.
