@@ -18,68 +18,103 @@ Alunos:
 
 ## 1. INTRODUÇÃO
 
-O mundo vive hoje em um momento de transição quando se trata de produtividade na indústria. A isto, tem-se dando o nome de Indústria 4.0¹. Desde o movimento de máquinas a vapor e água na primeira revolução industrial, até os dias atuais com a mecanizaçâo das linhas de produção, inteligência artificial, digitalização de diversos processos e _IoT_.
+O mundo vive hoje em um momento de transição quando se trata de produtividade na indústria. A isto, tem-se dando o nome de Indústria 4.0¹. Desde o movimento de máquinas a vapor e água na primeira revolução industrial, até os dias atuais com a mecanizaçâo das linhas de produção, inteligência artificial, digitalização de diversos processos e _IoT_, a conectividade tem feito sua diferença.
 
-A Indústria 4.0 nos oferece uma maior qualidade de informações e aproximação dos dados. Ela conecta o mundo físico das máquinas ao digital que permite uma melhor colaboração dos diversos departamentos que constituem a indústria, como a fábrica, parceiros, vendedores e consumidores².
+A Indústria 4.0 nos oferece uma maior qualidade de informações e aproximação dos dados. Ela conecta o mundo físico das máquinas ao digital, que permite uma melhor colaboração dos diversos departamentos que constituem a indústria, como a fábrica, parceiros,vendedores e consumidores².
 
 No Brasil, uma estimativa feita pela ABDI (Agência Brasileira de Desenvolvimento Industrial) estima que a redução de custos industriais no Brasil, a partir da migração da indústria para o conceito 4.0, será de, no mínimo, R$73 bilhões ao ano.³
 
 ## 2. CONCEPÇÃO
 
-O cerne do projeto visa buscar uma maior integração e controle de acesso do que antes era uma simples fechadura. Com o advento da tecnologia, podemos hoje transformar uma fechadura comum em algo extremamente tecnológico, controlado e único para os que desejam aplicar suas funcionalidades, que vão desde segurança ao acesso de dados. Alguns periféricos e _features_ são encontradas no projeto para que ele se torne ainda mais sólido.
+O cerne do projeto visa transformar algo extremamente comum e simples, como uma fechadura, em algo ainda mais seguro, tecnológico e conectado. A fechadura eletrônica além de garantir ainda mais comodidade ao usúario, também apresenta _features_ interessantes ao mercado e a acessibilidade aos mais diversos usos. 
+
+Além de contar com o básico de uma chave, a fechadura também pode ser aberta utilizando uma senha de seis digitos, _tags_ que utilizam a tecnologia RFID (_radio frequency identification_), e um aplicativo para aparelhos móveis, como _smartphones_ e _tablets_, para pessoas com pouca mobilidade que, por algum motivo, não alcancem o aparelho ou a fechadura. 
+
+Ademais, a fechadura também mostrará informações por meios visuais, a partir de um _display_ LCD e de um servidor, que pode ser acessador pela _internet_, além de informações sonoras. 
+
+| REQUISITOS | TECNOLOGIA EMPREGADA | PREÇO |
+| --------- | -------- | ------ |
+| CONTROLE DE ACESSO - SENHA | TECLADO MATRICIAL | R$ 8,90 |
+| CONTROLE DE ACESSO - RFID  | MODULO RFID MRFC522 | R$ 24,90 |
+| INTERFACE DIGITAL - HTML | MODULO ETHERNET W5100 | R$ 57,00 |
+| INTERFACE DIGITAL - APP | MODULO BLUETOOTH RS232 HC-05| R$ 39,90 |
+| INTERFACE VISUAL - TELA | DISPLAY LCD I2C | R$ 22,90 |
+| INTERFACE SONORA | BUZZER | R$ 9,90 |
+| MICROCONTROLADOR | ARDUINO MEGA | R$ 94,90 |
+
+**OS PREÇOS PODEM VARIAR DE ACORDO COM SUA REGIÃO**
 
 ## 3. DESIGN
 
 ![Esquemático](https://github.com/LPAE/pi2_eng_19_2/blob/master/Carol_Farias_Luiz_Erthal/esquematico.png)
 
-
 ### 3.1 ARDUINO
 
-O microcontrolador que será o cérebro do portão. Por ele se verificam os códigos de acesso, quais funções a fechadura deve executar.
+O cérebro do projeto. É por este microcontrolador que tudo ocorrerá. Será no arduino em que estará o código de controle de acesso, e o mesmo emitirá e receberá os mais diversos sinais de todos os sensores utilizados, sincronizando a informação e executando-a.
 
-Modelo: Arduino UNO R3.
+Modelo: Arduino MEGA.
+
+![mega](https://github.com/LPAE/pi2_eng_19_2/blob/master/Carol_Farias_Luiz_Erthal/images/mega.jpg)
 
 ### 3.2 DISPLAY LCD
 
 Interface gráfica onde poderá ser lido informações, mensagens ou avisos.
 
-Modelo: Display LCD 16x2  RT162-7
+A utilizacão do módulo I2C simplifica o projeto, já que com ele, se utiliza apenas quatro terminais de saída. 
+
+Modelo: Display LCD 16x2 com módulo I2C
+
+![display](https://github.com/LPAE/pi2_eng_19_2/blob/master/Carol_Farias_Luiz_Erthal/images/display.jpg)
 
 ### 3.3 SENSOR RFID
 
-Com esta tecnologia, é possível abrir utilizando uma _tag_ ou cartão de acesso, sem necessidade de uma chave ou senha.
+Com esta tecnologia, é possível abrir a fechadura utilizando uma _tag_ ou cartão de acesso, sem necessidade de uma chave ou senha.
 
-Modelo: Módulo Leitor RFID-RC522
+Foi utilizado o modelo MFRC522, pois, além de ser mais enxuto, ele apresenta um alcance maior de leitura e é possível cadastrar as tags por ele, sem precisar recorrer ao código.
+
+Modelo: Módulo Leitor RFID MFRC522
+
+![rfid](https://github.com/LPAE/pi2_eng_19_2/blob/master/Carol_Farias_Luiz_Erthal/images/rfid.jpg)
 
 ### 3.4 TECLADO NÚMERICO
 
-Teclado númerico simples, com números de zero a nove, onde será possível digitar uma senha específica de cada portão e ser concedido o acesso.
+Teclado númerico simples, com números de zero a nove, onde será possível digitar uma senha específica de cada fechadura e ser concedido o acesso.
 
 Modelo: Teclado Matricial 4x3
+
+![keyboard](https://github.com/LPAE/pi2_eng_19_2/blob/master/Carol_Farias_Luiz_Erthal/images/keyboard.jpg)
 
 ### 3.5 LEDs
 
 Informação visual para informar a situação do portão. Exemplo: vermelho para trancado, verde para aberto.
 
-### 3.6 BOTÃO
-
-Assim, é possível abrir o portão por dentro.
-
-### 3.7 BUZZER
+### 3.6 BUZZER
 
 Serve como informação sonora da utilização da fechadura eletrônica, como, por exemplo, um alarme.
 
-### 3.8 SENSOR BLUETOOTH
+![buzzer](https://github.com/LPAE/pi2_eng_19_2/blob/master/Carol_Farias_Luiz_Erthal/images/buzzer.jpg)
 
-Com este módulo, o portão eletrônica é capaz de informar os dados de entrada que forma utilizados na fechadura. A informação pode ser vista por meio de um _app_ ou _site_ da fechadura.
+### 3.7 SENSOR BLUETOOTH
 
-Modelo:
+Com este módulo, o portão eletrônica é capaz de informar os dados de entrada que forma utilizados na fechadura. A informação pode ser vista por meio de um _app_ da fechadura.
+
+Modelo: Módulo bluetooth RS232 HC-05
+
+![bluetooth](https://github.com/LPAE/pi2_eng_19_2/blob/master/Carol_Farias_Luiz_Erthal/images/bluetooth.png)
+
+### 3.8 MÓDULO ETHERNET
+
+Com o módulo ethernet, é possível implementar um servidor único para a fechadura, que recebe as informações enviadas pelo microcontrolador em HTML.
+
+![ethernet](https://github.com/LPAE/pi2_eng_19_2/blob/master/Carol_Farias_Luiz_Erthal/images/ethernet.jpg)
 
 ## 4. IMPLEMENTAÇÃO
 
 ## 5. OPERACIONALIZAÇÃO
 
-## 6. REFERÊNCIAS
+## 6. CONCLUSÕES
+
+## 7. REFERÊNCIAS
 
 ¹[What is industry 4.0? - Forbes](https://www.forbes.com/sites/bernardmarr/2018/09/02/what-is-industry-4-0-heres-a-super-easy-explanation-for-anyone/#1127c6ff9788) | Acessado em: 11/09/2019
 
