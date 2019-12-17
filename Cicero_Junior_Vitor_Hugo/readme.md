@@ -454,3 +454,13 @@ O segundo bloco lida com a conexão do bluetooth e também com a comunicação e
 Após a finalização do protótipo, criamos uma *case* capaz de comportar nosso projeto. O modelo escolhido foi uma caixa de acrílico feita sobmedida para os dispositivos utilizados no projeto. Ela possui 12cm de comprimento, 7cm de largura, 5cm de altura e conta com entrada para alimentação do arduino, entrada e saída de fios para o controle da fechadura e com um espaço específico para o display.
 
 ## Referências
+
+https://portal.vidadesilicio.com.br/primeiros-passos-shield-lcd-tft-24-touchscreen/
+
+https://www.arduinoecia.com.br/leitor-rfid-rdm6300-125khz-arduino/
+
+https://www.arduinoecia.com.br/sons-no-arduino-com-buzzer/
+
+https://www.curtocircuito.com.br/blog/hc-05-e-arduino-app-inventor-controle-mobile/
+
+
