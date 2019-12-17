@@ -48,6 +48,8 @@ Ademais, a fechadura também mostrará informações por meios visuais, a partir
 
 **OS PREÇOS PODEM VARIAR DE ACORDO COM SUA REGIÃO**
 
+###### A pesquisa dos preços foi realizada em 14/12/2019
+
 ## 3. DESIGN
 
 ### 3.1 ARDUINO
@@ -114,6 +116,8 @@ Com o módulo ethernet, é possível implementar um servidor único para a fecha
 
 A seguir, o esquemático utilizado para a montagem do projeto. Lembrando que o módulo ethernet deve ser acoplado em cima do arduino, utilizando seus terminais.
 
+O esquemático abaixo foi feito utilizando o _software_ Proteus.
+
 ![esquematico](https://github.com/LPAE/pi2_eng_19_2/blob/master/Carol_Farias_Luiz_Erthal/images/esquematico.png)
 
 O case utilizado para o projeto foi de uma embalagem de celular. Além de ser maleável e resistente, ela acomodou bem o circuito já montado. 
@@ -122,7 +126,7 @@ O case utilizado para o projeto foi de uma embalagem de celular. Além de ser ma
 
 É importante ressaltar que o projeto foi divido entre: controlador e acionador. Nos controladores, ficam os sensores e o próprio microcontrolador - arduino - utilizados. 
 
-No circuito de acionamento atente-se à alguns detalhes de suma importância. A corrente da fechadura possuí um transitório alto, algo em torno de 2,22A, enquanto o arduino mega suporte um máximo de 40mA.<sup>4</sup>
+No circuito de acionamento atente-se à alguns detalhes de suma importância. A corrente da fechadura possuí um transitório alto, algo em torno de 2,22A, enquanto o arduino mega suporta um máximo de 40mA.<sup>4</sup>
 
 Foi pensando em um circuito que separasse a referência da fonte e do arduino. No primeiro momento iria se utilizar um módulo relé para dar um pulso de corrente. Como alternativa, utilizou-se um opto acoplador (4N25) para se separar as referências e, para o pulso de correte, utilizou-se no projeto, um transistor IFR540s, funcionando, então, como uma chave.
 
@@ -130,13 +134,15 @@ Foi pensando em um circuito que separasse a referência da fonte e do arduino. N
 
 Na parte superior do _case_ fica o teclado matricial para o usuário digitar sua senha, além do _display_ LCD que mostra as informações recebidas pelo controlador. 
 
+LED's finalizam a parte visual do _case_. Uma luz vermelha fica acesa mostrando que a fechadura está fechada e uma luz verde acende nos intervalos em que a fechadura encontra-se aberta.
+
 Em sua lateral, há o sensor RFID para uma simples aproximação. O módulo bluetooth, o qual se comunica com o app, mantém-se dentro do case, já que não se faz necessário mostrar ele.
 
 ![lateral](https://github.com/LPAE/pi2_eng_19_2/blob/master/Carol_Farias_Luiz_Erthal/images/lateral.jpeg)
 
 ## 5. OPERACIONALIZAÇÃO
 
-Antes de qualquer coisa, informamos que o código completo está disponibilizado na pasta do projeto. Abaixo, encontra-se apenas algumas explicações de certas funções e parâmetros que o usúario pode modificar.
+Antes de qualquer coisa, informamos que o código completo está disponibilizado [aqui](https://github.com/LPAE/pi2_eng_19_2/blob/master/Carol_Farias_Luiz_Erthal/codigo_fechadura_versao_final.ino). Abaixo, encontra-se apenas algumas explicações de certas funções e parâmetros que o usúario pode modificar.
 
 
 **Teclado** 
@@ -193,7 +199,7 @@ Para a visualização do servidor web, o usuário deve buscar informações úni
 Porém, é necessário descobrir o _IPAdress_ do módulo utilizado. 
 Para usúario do Windows, seguir este passo a passo:
 1. Acesse o prompt de comendo
-2. Digit `ipconfig`
+2. Digite `ipconfig`
 3. Anote o endereço de IP.
 
 ![ip](https://github.com/LPAE/pi2_eng_19_2/blob/master/Carol_Farias_Luiz_Erthal/images/ip.png)
@@ -246,13 +252,31 @@ Neste caso, um pouco de conhecimento em HTML e programação se faz necessário.
                     client.println("</html>");
                     break;
 ```
+
 **Outros**
+
 
 Pequenas alterações também podem ser feitas ao decorrer do código. Fica, por exemplo, a escolha do usuário o tempo do acionamento do buzzer `delay(3000)` ou até mesmo em `noTone(buzzer)`. Ressaltando que o tempo em _delay_ está em milisegundos.
 
-A dupla recomenda que se explore o código, que é _open source_, para o aprimoramento do mesmo. 
+A dupla recomenda que se explore o código, que é _open source_, para o aprimoramento do mesmo.
+
+**Aplicativo**
+
+Feito utilizando a programação em blocos do _My App Inventor_, _software_ livre desenvolvido pelo MIT, o aplicativo da fechadura eletrônica fornece outro meio inovador de controle do portão.
+
+Seu código pode ser encontrado [aqui](https://github.com/LPAE/pi2_eng_19_2/blob/master/Carol_Farias_Luiz_Erthal/Codigo_aplicativo.pdf)
+
+![app1](https://github.com/LPAE/pi2_eng_19_2/blob/master/Carol_Farias_Luiz_Erthal/images/app1.jpeg)
+
+![app2](https://github.com/LPAE/pi2_eng_19_2/blob/master/Carol_Farias_Luiz_Erthal/images/app2.jpeg)
 
 ## 6. CONCLUSÕES
+
+O intuito do projeto era de desenvolver uma fechadura com as tecnologias mais atuais do mercado. Utilizando o método de CDIO, foi possível vencer a maior barreira na área de desenvolvimento de projetos: gerenciamento de tempo.
+
+Com quatro fases pré-estabelecidas e datas definidas, as implementações do projeto durante todo o semestre fluíram naturalmente. E talvez seja esse o maior conhecimento adquirido durante o Projeto Integrador II.
+
+Por fim, o projeto da fechadura é algo que podemos visualizar na prática desde sua concepção até o projeto final. É um protótipo que pode muito bem ser aprimorado e vendido comercialmente futuramente.
 
 ## 7. REFERÊNCIAS
 
