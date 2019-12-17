@@ -89,7 +89,7 @@ Sabemos quais tecnologias vamos adotar para nosso projeto. É necessário agora 
 
 A fase de implementação é onde desenvolvemos o protótipo do projeto afim de verificar seu funcionamento na prática, utilizando das escolhas feitas nas fases anteriores como base. Assim, como já temos o hardware necessário e já verificamos como devemos integrá-los, devemos agora nos concentrar principalmente na programação e interface com o usuário. 
 
-Inicialmente estudamos cada dispositivo separadamente, entendendo seu funcionamento e programação para, posteriormente, configurá-los como uma unidade. Possibilitar o funcionamento simultâneo de todos esses elementos foi a parte mais desafiadora(?). O resultado de nosso código está apresentado abaixo:
+Inicialmente estudamos cada dispositivo separadamente, entendendo seu funcionamento e programação para, posteriormente, configurá-los como uma unidade. Possibilitar o funcionamento simultâneo de todos esses elementos foi a parte mais desafiadora. O resultado de nosso código está apresentado abaixo:
 
 [Código aqui]
 
