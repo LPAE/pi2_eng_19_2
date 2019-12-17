@@ -55,6 +55,8 @@ Interface | Display TFT | 1
 Sinalização | Buzzer | 1
 Controle | Arduino Mega 2560 | 1
 Acesso Remoto | Módulo Bluetooth | 1
+Acionamento | Mosfet | 1
+Proteção | Diodo | 1
 
 ## Implementação
 
@@ -428,11 +430,13 @@ Para a modelagem da peça que porteriormente formaria nosso compartimento, conta
 
 ![peça2](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/peça2.jpeg)
 
-Após o corte, a peça foi lixada para um melhor acabamento e pintada com tinta preta. As partes que precisariam ser dobradas foram desgastadas com estilete e levemente umidecidas para facilitar a operação, evitando tensionar muito o materia. Alguns ajustes foram necesários em questão de imprecisão no corte, para isso, usamos estilete e alicate de corte, lixando e pintando novamente com tinta preta. Por fim, o compartimento foi selado com cola quente.
+Após o corte, a peça foi lixada para um melhor acabamento e pintada com tinta preta. As partes que precisariam ser dobradas foram desgastadas com estilete e levemente umidecidas para facilitar a operação, evitando tensionar muito o material. Alguns ajustes foram necesários em questão de imprecisão no corte, para isso, usamos estilete e alicate de corte, lixando e pintando novamente com tinta preta. Por fim, o compartimento foi selado com cola quente.
 
 ![peça4](https://github.com/LPAE/pi2_eng_19_2/blob/master/Victor_Lompa_e_Gabriel_Ayres/Imagens/peça4.jpeg)
 
-O código por trás do arduino foi criado com base em diversas referências citadas e em códigos de exemplo que são instalados junto às bibliotecas de cada componente.
+O código por trás do arduino foi criado com base em diversas referências citadas e em códigos de exemplo que são instalados junto às bibliotecas de cada componente. Cada módulo funcionou perfeitamente de maneira isolada mas, ao unificar os códigos para o produto final, tivemos alguns conflitos por conta das portas seriais: O módulo RFID, que já havia sido testado com um código totalmente funcional, deixou de responder normalmente quando usado junto ao bluetooth. Após procurar por possíveis curtos na placa ou incrongruências no código, concluimos que o problema do RFID deveria ser de compatibilidade com os demais módulos.
+O display a princípio poderia ter sido usado apenas como comunicação com o usuário enquanto que, para a inserção da senha, usaríamos um teclado matricial 4x4. Abandonamos esta ideia ao observar que seria possível e muito mais prático inserir a senha diretamente pelo display que teria esta dupla função de comunicação e acionamento por senha. 
+
 
 ## Referências
 Indústria 4.0: https://www.youtube.com/watch?v=ISk64bJ35yM&feature=emb_title
