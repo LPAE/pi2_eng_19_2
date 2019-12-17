@@ -58,6 +58,7 @@
 #include <MFRC522.h>
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
+#include <Ethernet.h>
 
 #define SS_PIN 53
 #define RST_PIN 49
@@ -112,12 +113,19 @@ MFRC522 LeitorRFID(SS_PIN, RST_PIN);    // Cria uma nova instância para o leito
 
 char buf;
 
+byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
+IPAddress ip(192, 168, 25, 16); // esses parâmetros devem ser mudados para cada usuário
+EthernetServer server(80);  
+
 void setup()  //Main arduino
 { 
   
 estadoPorta(true); // diz se a porta está ou não trancada
 
-
+   
+Ethernet.begin(mac, ip);  
+server.begin();    
+   
 pinMode(ledVermelho,OUTPUT); 
 pinMode(ledVerde,OUTPUT);
 pinMode(releFechadura,OUTPUT);
@@ -375,6 +383,7 @@ void efeitoNegado(){
     lcd.setCursor(0,1);
     lcd.print("Acesso negado!");
     delay(3000);
+    servidor();
     mensageminicial(); 
           noTone(buzzer);
     
@@ -391,4 +400,59 @@ void mensageminicial()
   lcd.print("Aproxime o seu");
   lcd.setCursor(0,1);
   lcd.print("cartao do leitor");
+}
+
+void servidor()
+{
+       EthernetClient client = server.available();  
+ 
+    if (client) 
+    { 
+      
+        boolean currentLineIsBlank = true;
+        while (client.connected()) 
+        {
+            if (client.available())
+            {   
+                char c = client.read(); 
+                
+                if (c == '\n' && currentLineIsBlank) 
+                {
+                  
+                    client.println("HTTP/1.1 200 OK");
+                    client.println("Content-Type: text/html");
+                    client.println("Connection: close");
+                    client.println();
+                    client.println(refresh = 3);
+                    client.println("<!DOCTYPE html>");
+                    client.println("<html>");
+                    client.println("<head>");
+                    client.println("<title>Servidor WEB - Fechadura Eletrônica </title>");
+                    client.println("</head>");
+                    client.println("<body>");
+                    client.println("<h1>Alunos: Carol Farias e Luiz Gustavo Erthal</h1>
+                    client.println("<h1>Log History</h1>");
+                    client.println("<p>");
+                    client.println(info);
+                    client.println("</p>");               
+                    client.println("</body>");
+                    client.println("</html>");
+                    break;
+                }
+                
+                if (c == '\n') 
+                {
+                    currentLineIsBlank = true;
+                } 
+                else if (c != '\r') 
+                {
+                    currentLineIsBlank = false;
+                }
+            } 
+        }
+        
+        delay(1);      
+        client.stop(); 
+        
+    } 
 }
